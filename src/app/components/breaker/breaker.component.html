@@ -11,16 +11,18 @@
       mat-flat-button 
       color="primary" 
       [href]="breaker.manufacturerDrawing" 
-      target="_blank">
-      Manufacturer Drawing
+      target="_blank"
+      matTooltip="Manufacturer Drawing">
+      <mat-icon>description</mat-icon>
     </a>
     @if (breaker.asBuiltDrawing) {
       <a 
         mat-flat-button 
         color="accent" 
         [href]="breaker.asBuiltDrawing" 
-        target="_blank">
-        As Built Drawing
+        target="_blank"
+        matTooltip="As Built Drawing">
+        <mat-icon>engineering</mat-icon>
       </a>
     }
   </mat-card-actions>

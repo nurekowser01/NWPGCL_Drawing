@@ -1,9 +1,9 @@
 <div *ngIf="section">
-  <h1>{{ section.name }}</h1>
+  <h1 class="section-title">{{ section.name }}</h1>
   
   <div class="bus-container">
     <mat-card *ngFor="let bus of section.buses" class="bus-card">
-      <mat-card-header>
+      <mat-card-header class="bus-header">
         <mat-card-title>
           {{ bus.id }}
           <span class="voltage-badge">({{ bus.voltage }} {{ bus.name }})</span>
@@ -11,16 +11,22 @@
       </mat-card-header>
 
       <mat-card-content>
-        <div class="panels-container">
-          <mat-expansion-panel *ngFor="let panel of bus.panels" class="panel-item">
-            <mat-expansion-panel-header>
-              <mat-panel-title>{{ panel.id }}</mat-panel-title>
-            </mat-expansion-panel-header>
-            
-            <div class="breakers-container">
-              <app-breaker *ngFor="let breaker of panel.breakers" [breaker]="breaker"></app-breaker>
-            </div>
-          </mat-expansion-panel>
+        <div class="panels-wrapper">
+          <div class="panels-container">
+            <mat-expansion-panel 
+              *ngFor="let panel of bus.panels" 
+              class="floating-panel"
+              [expanded]="false">
+              
+              <mat-expansion-panel-header class="panel-header">
+                <mat-panel-title class="panel-id">{{ panel.id }}</mat-panel-title>
+              </mat-expansion-panel-header>
+
+              <div class="breakers-container">
+                <app-breaker *ngFor="let breaker of panel.breakers" [breaker]="breaker"></app-breaker>
+              </div>
+            </mat-expansion-panel>
+          </div>
         </div>
       </mat-card-content>
     </mat-card>

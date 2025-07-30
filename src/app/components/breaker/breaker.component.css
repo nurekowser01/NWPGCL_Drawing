@@ -11,7 +11,7 @@ mat-card-actions {
 a[mat-flat-button] {
   flex: 1;
   min-width: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
