@@ -4,6 +4,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterOutlet } from '@angular/router';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
@@ -13,11 +14,19 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     MatSidenavModule,
     MatToolbarModule,
     RouterOutlet,
-    SidebarComponent
+    SidebarComponent,
+    MatIconModule
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'Sirajganj CCPP Unit - 1 Electrical Drawing System';
+
+  sidebarOpen = true;
+
+  toggleSidebar() {
+    this.sidebarOpen = !this.sidebarOpen;
+  }
+
 }

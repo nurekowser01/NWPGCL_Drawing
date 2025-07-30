@@ -1,9 +1,12 @@
 <mat-sidenav-container class="app-container">
-  <mat-sidenav mode="side" opened>
+  <mat-sidenav #sidenav mode="side" [opened]="sidebarOpen">
     <app-sidebar></app-sidebar>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
+      <button mat-icon-button (click)="toggleSidebar()">
+        <mat-icon>menu</mat-icon>
+      </button>
       <span>{{ title }}</span>
     </mat-toolbar>
     <div class="content">

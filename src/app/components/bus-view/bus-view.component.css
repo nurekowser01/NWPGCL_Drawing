@@ -42,7 +42,7 @@
 
 .floating-panel {
   display: inline-block;
-  width: 380px;
+  width: 250px;
   min-height: 48px;
   margin: 0 8px 8px 0;
   vertical-align: top;
@@ -173,6 +173,7 @@
 }
 
 /* Responsive adjustments */
+/*
 @media (max-width: 1300px) {
   .floating-panel {
     width: 340px;
@@ -183,9 +184,9 @@
   .floating-panel {
     width: 300px;
   }
-  
-  /* Switch to single column on small screens */
+
+  /* Switch to single column on small screens *//* 
   .breakers-container:has(> :nth-child(3)) {
     grid-template-columns: 1fr;
   }
-}
+} */
