@@ -1,5 +1,6 @@
 .breaker-card {
-  margin: 4px 0;
+  margin: 0; /* Remove margin since gap handles spacing */
+  height: 100%; /* Make cards fill grid cells */
 }
 
 mat-card-actions {
