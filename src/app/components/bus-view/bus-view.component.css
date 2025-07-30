@@ -1,7 +1,11 @@
+.bus-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .bus-card {
   margin-bottom: 24px;
-  width: 100%;
-  overflow: visible;
 }
 
 .voltage-badge {
@@ -10,59 +14,32 @@
   margin-left: 8px;
 }
 
-/* Horizontal panels container */
 .panels-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
   gap: 12px;
-  overflow-x: auto;
-  padding: 12px 0;
-  scrollbar-width: thin;
+  margin-top: 12px;
 }
 
-/* Individual expansion panel styling */
-.horizontal-panel {
-  min-width: 280px;
-  flex-shrink: 0;
+.panel-item {
+  width: 100%;
 }
 
-/* Expansion panel header */
-.mat-expansion-panel-header {
-  padding: 0 12px;
-  height: 48px !important;
-}
-
-/* Breakers container */
 .breakers-container {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 12px;
+  padding: 12px 0;
 }
 
-/* Custom scrollbar */
-.panels-container::-webkit-scrollbar {
-  height: 6px;
+/* Expansion panel customization */
+.mat-expansion-panel {
+  background: white;
+  box-shadow: none;
+  border: 1px solid #e0e0e0;
 }
 
-.panels-container::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 3px;
+.mat-expansion-panel-header {
+  padding: 0 16px;
+  height: 48px !important;
 }
-
-.panels-container::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 3px;
-}
-
-.panels-container::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .horizontal-panel {
-    min-width: 240px;
-  }
-}
-
