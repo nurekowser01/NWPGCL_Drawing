@@ -1,0 +1,20 @@
+.bus-card {
+  margin-bottom: 24px;
+}
+
+.voltage-badge {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.6);
+  margin-left: 8px;
+}
+
+.panel {
+  margin-top: 12px;
+}
+
+.breakers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 0;
+}

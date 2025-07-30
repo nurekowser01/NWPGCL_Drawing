@@ -1,0 +1,27 @@
+<mat-card class="breaker-card">
+  <mat-card-header>
+    <mat-card-title>
+      {{ breaker.description }}
+      <span class="breaker-id">({{ breaker.id }})</span>
+    </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-actions>
+    <a 
+      mat-flat-button 
+      color="primary" 
+      [href]="breaker.manufacturerDrawing" 
+      target="_blank">
+      Manufacturer Drawing
+    </a>
+    @if (breaker.asBuiltDrawing) {
+      <a 
+        mat-flat-button 
+        color="accent" 
+        [href]="breaker.asBuiltDrawing" 
+        target="_blank">
+        As Built Drawing
+      </a>
+    }
+  </mat-card-actions>
+</mat-card>

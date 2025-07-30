@@ -1,0 +1,8 @@
+.active-section {
+  background-color: rgba(0, 0, 0, 0.04);
+  font-weight: 500;
+}
+
+mat-nav-list {
+  padding-top: 0;
+}

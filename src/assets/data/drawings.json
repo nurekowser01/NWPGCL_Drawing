@@ -1,0 +1,52 @@
+{
+  "sections": [
+    {
+      "id": "gas-turbine",
+      "name": "Gas Turbine",
+      "buses": [
+        {
+          "id": "GT-11BBA",
+          "name": "6.6kV Bus A",
+          "voltage": "6.6kV",
+          "panels": [
+            {
+              "id": "GT-11BBA01",
+              "breakers": [
+                {
+                  "id": "GT-11BBA01",
+                  "description": "Gas Turbine Power Incoming",
+                  "manufacturerDrawing": "assets/drawings/gt-11BBA01-manufacturer.pdf",
+                  "asBuiltDrawing": "assets/drawings/gt-11BBA01-asbuilt.pdf"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "steam-turbine",
+      "name": "Steam Turbine",
+      "buses": [
+        {
+          "id": "ST-11BBA",
+          "name": "6.6kV Bus A",
+          "voltage": "6.6kV",
+          "panels": [
+            {
+              "id": "ST-11BBA01",
+              "breakers": [
+                {
+                  "id": "ST-11BBA01",
+                  "description": "Steam Turbine Power Incoming",
+                  "manufacturerDrawing": "assets/drawings/st-11BBA01-manufacturer.pdf",
+                  "asBuiltDrawing": "assets/drawings/st-11BBA01-asbuilt.pdf"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

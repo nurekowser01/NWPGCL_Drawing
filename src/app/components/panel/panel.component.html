@@ -1,0 +1,9 @@
+<div class="panel">
+  <h3>{{ panel.id }}</h3>
+  <div class="breakers-container">
+    <app-breaker 
+      *ngFor="let breaker of panel.breakers"
+      [breaker]="breaker">
+    </app-breaker>
+  </div>
+</div>
