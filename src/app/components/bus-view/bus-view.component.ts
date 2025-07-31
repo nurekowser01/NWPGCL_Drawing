@@ -27,7 +27,9 @@ export class BusViewComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(params => {
       this.busId = params['id'];
-      this.section = this.drawingService.getSection(this.busId);
+      this.drawingService.getSection(this.busId).subscribe(section => {
+        this.section = section;
+      });
     });
   }
 }

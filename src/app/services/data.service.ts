@@ -14,6 +14,7 @@ export class DataService {
   private readonly REPO = environment.github.repo;
   private readonly FILE_PATH = 'src/assets/data/drawings.json';
   private readonly TOKEN = environment.github.token;
+  private dataVersion = 0; // Add version counter
 
   constructor(private http: HttpClient) { }
 

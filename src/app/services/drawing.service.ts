@@ -1,29 +1,83 @@
 import { Injectable } from '@angular/core';
-import drawingsData from '../../assets/data/drawings.json';
+import { HttpClient } from '@angular/common/http';
+import { Observable, of } from 'rxjs';
+import { map, catchError, shareReplay } from 'rxjs/operators';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DrawingService {
-  private data = drawingsData;
+  private readonly GITHUB_API = environment.github.api;
+  private readonly REPO = environment.github.repo;
+  private readonly FILE_PATH = 'src/assets/data/drawings.json';
+  private cachedData$!: Observable<any>; // Definite assignment assertion
 
-  getSections() {
-    return this.data.sections;
+  constructor(private http: HttpClient) {
+    this.cachedData$ = this.loadData(); // Initialize in constructor
   }
 
-  getSection(sectionId: string) {
-    return this.data.sections.find(s => s.id === sectionId);
+  private loadData(): Observable<any> {
+    return this.http.get(`${this.GITHUB_API}/repos/${this.REPO}/contents/${this.FILE_PATH}`, {
+      headers: this.getHeaders()
+    }).pipe(
+      map((response: any) => {
+        const content = atob(response.content.replace(/\s/g, ''));
+        return JSON.parse(content);
+      }),
+      shareReplay(1), // Cache the latest data
+      catchError(error => {
+        console.error('Failed to load from GitHub, using fallback:', error);
+        return this.getLocalFallback();
+      })
+    );
   }
 
-  getBreaker(breakerId: string) {
-    for (const section of this.data.sections) {
-      for (const bus of section.buses) {
-        for (const panel of bus.panels) {
-          const breaker = panel.breakers.find(b => b.id === breakerId);
-          if (breaker) return breaker;
+  private getLocalFallback(): Observable<any> {
+    return this.http.get('assets/data/drawings.json').pipe(
+      catchError(() => of({ sections: [] })) // Empty fallback
+    );
+  }
+
+  getSections(): Observable<any[]> {
+    return this.cachedData$.pipe(
+      map(data => data?.sections || [])
+    );
+  }
+
+  getSection(sectionId: string): Observable<any> {
+    return this.cachedData$.pipe(
+      map(data => data?.sections?.find((s: any) => s.id === sectionId))
+    );
+  }
+
+  getBreaker(breakerId: string): Observable<any> {
+    return this.cachedData$.pipe(
+      map(data => {
+        if (!data?.sections) return undefined;
+        
+        for (const section of data.sections) {
+          for (const bus of section.buses || []) {
+            for (const panel of bus.panels || []) {
+              const breaker = panel.breakers?.find((b: any) => b.id === breakerId);
+              if (breaker) return breaker;
+            }
+          }
         }
-      }
-    }
-    return undefined;
+        return undefined;
+      })
+    );
+  }
+
+  refreshData(): void {
+    this.cachedData$ = this.loadData();
+  }
+
+  private getHeaders() {
+    return {
+      'Authorization': `token ${environment.github.token}`,
+      'Accept': 'application/vnd.github.v3+json',
+      'X-GitHub-Api-Version': '2022-11-28'
+    };
   }
 }

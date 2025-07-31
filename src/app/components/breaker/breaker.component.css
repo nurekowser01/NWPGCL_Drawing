@@ -16,3 +16,21 @@ a[mat-flat-button] {
   justify-content: center;
   align-items: center;
 }
+
+/* Add to breaker.component.css */
+.drawing-button {
+  min-width: 40px !important;
+  width: 40px !important;
+  padding: 0 !important;
+}
+
+.drawing-icon {
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: Arial, sans-serif;
+}
+
+/* Optional: Add some spacing between buttons */
+mat-card-actions {
+  gap: 8px;
+}
