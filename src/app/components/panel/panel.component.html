@@ -1,9 +1,15 @@
+
+
 <div class="panel">
   <h3>{{ panel.id }}</h3>
   <div class="breakers-container">
+  @for (breaker of panel.breakers; track breaker.id) {
     <app-breaker 
-      *ngFor="let breaker of panel.breakers"
-      [breaker]="breaker">
+      [breaker]="breaker" 
+      [busId]="busId" 
+      [panelId]="panel.id">
     </app-breaker>
+  }
+
   </div>
 </div>

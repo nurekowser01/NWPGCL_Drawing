@@ -1,8 +1,8 @@
+<!-- breaker.component.html -->
 <mat-card class="breaker-card">
   <mat-card-header>
     <mat-card-title>
       {{ breaker.description }}
-      <!-- <span class="breaker-id">({{ breaker.id }})</span> -->
     </mat-card-title>
   </mat-card-header>
 
@@ -25,5 +25,12 @@
         <mat-icon>engineering</mat-icon>
       </a>
     }
+    <button 
+      mat-flat-button 
+      color="warn" 
+      (click)="editBreaker()"
+      matTooltip="Edit Drawings">
+      <mat-icon>edit</mat-icon>
+    </button>
   </mat-card-actions>
 </mat-card>

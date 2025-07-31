@@ -23,7 +23,12 @@
               </mat-expansion-panel-header>
 
               <div class="breakers-container">
-                <app-breaker *ngFor="let breaker of panel.breakers" [breaker]="breaker"></app-breaker>
+                <app-breaker 
+                  *ngFor="let breaker of panel.breakers" 
+                  [breaker]="breaker"
+                  [busId]="bus.id"
+                  [panelId]="panel.id">
+                </app-breaker>
               </div>
             </mat-expansion-panel>
           </div>

@@ -1,3 +1,4 @@
+// panel.component.ts
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BreakerComponent } from '../breaker/breaker.component';
@@ -12,4 +13,5 @@ import { Panel } from '../../models/panel.model';
 })
 export class PanelComponent {
   @Input() panel!: Panel;
+  @Input() busId!: string;
 }
