@@ -172,7 +172,7 @@
                 {
                   "id": "11BFA06.G",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFA06.G-manufacturer.pdf",
+                  "manufacturerDrawing": "       <span *ngIf=\"breaker.drawingNumber\">({{ breaker.drawingNumber }})</span>",
                   "drawingNumber": "07-1"
                 },
                 {
