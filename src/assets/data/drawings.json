@@ -172,7 +172,7 @@
                 {
                   "id": "11BFA06.G",
                   "description": "StandBy",
-                  "manufacturerDrawing": "       <span *ngIf=\"breaker.drawingNumber\">({{ breaker.drawingNumber }})</span>",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
