@@ -22,7 +22,7 @@ jobs:
 
       - name: Create ALL environment files
         run: |
-          mkdir -p src/environments
+          mkdir -p src/app/environments
           # Development environment (empty token)
           echo "export const environment = { production: false, github: { api: 'https://api.github.com', repo: 'nurekowser01/NWPGCL_Drawing', token: '' } };" > src/app/environments/environment.ts
           # Production environment (injected token)
