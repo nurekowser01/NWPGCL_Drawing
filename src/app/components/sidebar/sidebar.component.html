@@ -1,9 +1,15 @@
 <mat-nav-list>
+  <div class="sidebar-header">
+    <h2>Electrical Systems</h2>
+    <mat-divider></mat-divider>
+  </div>
+  
   <a mat-list-item 
      *ngFor="let section of sections"
      [routerLink]="['/section', section.id]"
-     routerLinkActive="active-section">
-    <mat-icon matListItemIcon>{{section.icon}}</mat-icon>
-    <span matListItemTitle>{{section.name}}</span>
+     routerLinkActive="active-section"
+     class="nav-item">
+    <mat-icon matListItemIcon class="nav-icon">{{section.icon}}</mat-icon>
+    <span matListItemTitle class="nav-text">{{section.name}}</span>
   </a>
 </mat-nav-list>

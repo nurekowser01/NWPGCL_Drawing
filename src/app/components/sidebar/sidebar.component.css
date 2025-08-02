@@ -1,8 +1,68 @@
+/* Sidebar Container */
+mat-nav-list {
+  padding: 0;
+  width: 250px;
+}
+
+/* Header Styles */
+.sidebar-header {
+  padding: 16px 24px 8px;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+/* Navigation Items */
+/* Ensure consistent height for all nav items */
+.nav-item {
+  height: 48px; /* Material Design standard */
+  margin: 0;
+  padding: 0 16px;
+  border-radius: 0;
+}
+
+/* Active state styling */
 .active-section {
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: rgba(63, 81, 181, 0.15) !important;
+  border-left: 4px solid var(--primary-color);
+}
+
+.active-section .nav-icon,
+.active-section .nav-text {
+  color: var(--primary-dark);
+  font-weight: 500;
+  transform: none !important; /* Remove any transforms */
+}
+
+/* Ensure icons and text align properly */
+.nav-icon {
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+
+.nav-text {
+  line-height: 24px; /* Match icon height */
+}
+
+/* Active Route Styling */
+.active-section {
+  background-color: rgba(63, 81, 181, 0.15) !important;
+}
+
+.active-section .nav-icon,
+.active-section .nav-text {
+  color: var(--primary-dark);
   font-weight: 500;
 }
 
-mat-nav-list {
-  padding-top: 0;
+/* Divider Styling */
+.mat-divider {
+  margin: 8px 0;
+  border-top-color: rgba(0, 0, 0, 0.08);
 }

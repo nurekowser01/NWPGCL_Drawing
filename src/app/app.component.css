@@ -1,11 +1,185 @@
+/* Angular Material Theme Variables */
+:root {
+  --primary-color: #3f51b5;
+  --primary-light: #757de8;
+  --primary-dark: #002984;
+  --accent-color: #ff4081;
+  --warn-color: #f44336;
+  --text-on-primary: white;
+  --text-on-accent: white;
+  --text-on-warn: white;
+}
+
+/* Layout Structure */
 .app-container {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
 }
 
-mat-sidenav {
-  width: 250px;
+/* Side Navigation */
+.app-sidenav {
+  width: 280px;
+  background: white;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.content {
-  padding: 20px;
+/* Main Content Area */
+.app-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Toolbar Styles */
+/* Updated Toolbar Styles with Beautiful Title */
+.app-toolbar {
+  /* position: sticky; */
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  background-color: var(--primary-color);
+  color: var(--text-on-primary);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  height: 80px; /* Increased toolbar height */
+}
+
+.app-toolbar .app-title {
+  margin: 0 auto; /* Center the title */
+  font-size: 1.8rem; /* Larger font size */
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 1px; /* Better letter spacing */
+  text-transform: uppercase; /* Optional: uppercase style */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  position: relative;
+  padding: 0 20px;
+}
+
+/* Add a decorative underline to the title */
+.app-toolbar .app-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+  border-radius: 3px;
+}
+
+/* Menu button styling */
+.app-toolbar button[mat-icon-button] {
+  position: absolute;
+  left: 16px;
+  color: var(--text-on-primary);
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-toolbar button[mat-icon-button]:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.app-toolbar button[mat-icon-button] mat-icon {
+  font-size: 28px;
+  width: 28px;
+  height: 28px;
+}
+
+/* Profile button styling */
+.app-toolbar button[mat-icon-button]:last-child {
+  left: auto;
+  right: 16px;
+}
+
+/* Content Container */
+.app-content-container {
+  flex: 1;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Footer Styles */
+.app-footer {
+  padding: 12px 24px;
+  background: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.app-footer .app-footer-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.app-footer .app-footer-spacer {
+  flex: 1 1 auto;
+}
+
+/* Material Overrides */
+.mat-divider {
+  margin: 16px 0 !important;
+}
+
+/* Custom scrollbar for sidenav */
+.mat-drawer-inner-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.mat-drawer-inner-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.mat-drawer-inner-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.mat-drawer-inner-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 959px) {
+  .app-sidenav {
+    width: 240px;
+  }
+  
+  .app-content-container {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-toolbar .app-title {
+    font-size: 1rem;
+  }
+  
+  .app-content-container {
+    padding: 12px;
+  }
 }

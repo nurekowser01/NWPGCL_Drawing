@@ -1,16 +1,37 @@
-<mat-sidenav-container class="app-container">
-  <mat-sidenav #sidenav mode="side" [opened]="sidebarOpen">
+<mat-sidenav-container class="app-container" fullscreen>
+  <mat-sidenav #sidenav 
+               [mode]="'side'" 
+               [opened]="sidebarOpen"
+               class="app-sidenav"
+               [disableClose]="true">
     <app-sidebar></app-sidebar>
   </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button mat-icon-button (click)="toggleSidebar()">
+  
+  <mat-sidenav-content class="app-content">
+    <mat-toolbar color="primary" class="app-toolbar">
+      <button mat-icon-button 
+              (click)="toggleSidebar()"
+              matTooltip="Toggle Menu"
+              aria-label="Toggle menu">
         <mat-icon>menu</mat-icon>
       </button>
-      <span>{{ title }}</span>
+      <span class="app-title">{{ title }}</span>
+      <div class="app-toolbar-spacer"></div>
+      <button mat-icon-button matTooltip="User Profile" aria-label="User profile">
+        <mat-icon>account_circle</mat-icon>
+      </button>
     </mat-toolbar>
-    <div class="content">
+    
+    <div class="app-content-container">
       <router-outlet></router-outlet>
     </div>
+    
+    <footer class="app-footer mat-elevation-z4">
+      <div class="app-footer-content">
+        <span>© 2023 Sirajganj CCPP Unit - 1. All rights reserved.</span>
+        <span class="app-footer-spacer"></span>
+        <span>Version 1.0.0</span>
+      </div>
+    </footer>
   </mat-sidenav-content>
 </mat-sidenav-container>
