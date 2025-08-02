@@ -8,7 +8,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write  # This is crucial for pushing to gh-pages
       pages: write
       id-token: write
     
@@ -16,84 +16,35 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
-
-      - name: Clean workspace
-        run: |
-          rm -rf node_modules
-          rm -rf dist
-          rm -rf .angular/cache
+          fetch-depth: 0  # Important for peaceiris/actions-gh-pages
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'npm'
 
       - name: Install dependencies
-        run: |
-          npm cache clean --force
-          npm ci
+        run: npm ci
 
       - name: Create environment files
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           mkdir -p src/app/environments
-          
           # Development environment
-          echo "export const environment = { 
-            production: false, 
-            github: { 
-              api: 'https://api.github.com', 
-              repo: 'nurekowser01/NWPGCL_Drawing', 
-              token: '' 
-            } 
-          };" > src/app/environments/environment.ts
-          
-          # Production environment with proper escaping
-          cat > src/app/environments/environment.prod.ts <<'EOF'
-          export const environment = {
-            production: true,
-            github: {
-              api: 'https://api.github.com',
-              repo: 'nurekowser01/NWPGCL_Drawing',
-              token: '${GH_TOKEN}'
-            }
-          };
-          EOF
-          
-          # Verification
-          echo "=== Environment File Verification ==="
-          echo "File created at: src/app/environments/environment.prod.ts"
-          echo "Token present: $(grep -q 'token' src/app/environments/environment.prod.ts && echo 'Yes' || echo 'No')"
-          echo "Expected token ending: ${GH_TOKEN: -4}"
-          echo "File content sample:"
-          head -n 6 src/app/environments/environment.prod.ts | sed 's/token:.*/token: [REDACTED]/'
+          echo "export const environment = { production: false, github: { api: 'https://api.github.com', repo: 'nurekowser01/NWPGCL_Drawing', token: '' } };" > src/app/environments/environment.ts
+          # Production environment (simpler injection)
+          echo "export const environment = { production: true, github: { api: 'https://api.github.com', repo: 'nurekowser01/NWPGCL_Drawing', token: '${{ secrets.GH_TOKEN }}' } };" > src/app/environments/environment.prod.ts
+          # Verify token was injected (without exposing full token)
+          echo "Token was injected: $(grep -q 'token:' src/app/environments/environment.prod.ts && echo 'Yes' || echo 'No')"
+          echo "Token length: $(grep -oP 'token: \K[^,]+' src/app/environments/environment.prod.ts | tr -d "'" | wc -c)"
 
       - name: Build Angular app
         run: npm run build -- --configuration production --base-href /NWPGCL_Drawing/
 
-      - name: Verify built files
-        run: |
-          echo "=== Checking for token in built files ==="
-          find dist -name "main*.js" -exec grep -l "github.token" {} \; | while read file; do
-            echo "Found in ${file}:"
-            grep -o "github.token.:.[^,]*" "$file" | head -c 20
-            echo ""
-          done
-
       - name: Add .nojekyll file
         run: touch dist/power-plant-drawing-app/browser/.nojekyll
-
-      - name: Delete gh-pages branch (if exists)
-        run: |
-          git fetch origin gh-pages || echo "Branch does not exist"
-          git push origin --delete gh-pages || echo "Branch did not exist"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/power-plant-drawing-app/browser
-          keep_files: false  # Ensures clean deployment
