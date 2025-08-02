@@ -10,7 +10,7 @@ export class DrawingService {
   private readonly GITHUB_API = 'https://api.github.com';
   private readonly REPO = 'nurekowser01/NWPGCL_Drawing';
   private readonly FILE_PATH = 'src/assets/data/drawings.json';
-  private readonly TOKEN = (process.env as any)['GITHUB_TOKEN'] || '';
+private readonly TOKEN = (process.env as any)['NG_APP_GITHUB_TOKEN'] || '';
   private cachedData$: Observable<any>;
 
   constructor(private http: HttpClient) {

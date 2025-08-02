@@ -12,7 +12,7 @@ export class DataService {
    private readonly GITHUB_API = 'https://api.github.com';
   private readonly REPO = 'nurekowser01/NWPGCL_Drawing';
   private readonly FILE_PATH = 'src/assets/data/drawings.json';
-  private readonly TOKEN = (process.env as any)['GITHUB_TOKEN'] || ''; // From build env
+private readonly TOKEN = (process.env as any)['NG_APP_GITHUB_TOKEN'] || '';
   private dataVersion = 0;
 
   constructor(private http: HttpClient) { }

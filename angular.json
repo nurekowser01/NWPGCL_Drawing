@@ -13,15 +13,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-           
             "outputPath": "dist/power-plant-drawing-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "baseHref": "/NWPGCL_Drawing/",
             "deployUrl": "/NWPGCL_Drawing/",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -37,24 +34,23 @@
           },
           "configurations": {
             "production": {
-
-               "fileReplacements": [
-                  {
-                    "replace": "src/environments/environment.ts",
-                    "with": "src/environments/environment.prod.ts"
-                  }
-                ],
-                "optimization": true,
-                "vendorChunk": false,
-                "buildOptimizer": true,
-                "environment": {
-                  "GITHUB_TOKEN": ""
-                },
-              
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
+                  "maximumWarning": "700kB",
                   "maximumError": "1MB"
                 },
                 {
@@ -63,33 +59,50 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "allowedCommonJsDependencies": [],
+              "serviceWorker": false,
+              "ngswConfigPath": "",
+              "environment": {
+                "NG_APP_GITHUB_API": "https://api.github.com",
+                "NG_APP_GITHUB_REPO": "nurekowser01/NWPGCL_Drawing"
+              }
             },
             "development": {
               "optimization": false,
+              "outputHashing": "none",
+              "sourceMap": true,
+              "namedChunks": true,
               "extractLicenses": false,
-              "sourceMap": true
+              "vendorChunk": true,
+              "buildOptimizer": false,
+              "environment": {
+                "NG_APP_GITHUB_API": "https://api.github.com",
+                "NG_APP_GITHUB_REPO": "nurekowser01/NWPGCL_Drawing"
+              }
             }
           },
           "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "proxyConfig": "proxy.conf.json"
+          },
           "configurations": {
             "production": {
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "buildTarget": "power-plant-drawing-app:build:production"
+              "browserTarget": "power-plant-drawing-app:build:production"
             },
             "development": {
-              "buildTarget": "power-plant-drawing-app:build:development"
+              "browserTarget": "power-plant-drawing-app:build:development"
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n"
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "power-plant-drawing-app:build"
+          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
@@ -114,5 +127,9 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false,
+    "defaultCollection": "@angular-eslint/schematics"
   }
 }
