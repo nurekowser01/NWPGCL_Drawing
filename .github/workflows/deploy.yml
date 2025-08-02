@@ -31,8 +31,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           # Generate config file
-          mkdir -p src/app/core
-          cat > src/app/core/github.config.ts <<EOF
+          mkdir -p src/app
+          cat > src/app/github.config.ts <<EOF
           export const GITHUB_CONFIG = {
             api: 'https://api.github.com',
             repo: 'nurekowser01/NWPGCL_Drawing',
