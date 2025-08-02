@@ -172,44 +172,44 @@
                 {
                   "id": "11BFA06.G",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFA06.G-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BFA06.F",
                   "description": "SST Thermostat Power",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFA06.F-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BFA06.E",
                   "description": "UPS Bypass Power _1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFA06.E-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BFA06.D",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFA06.D-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BFA06.C",
                   "description": "Air Compressor",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFA06.C-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BFA06.B",
                   "description": "Control Cabinet of motor of f.f. pump power _1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFA06.B-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BFA06.A",
                   "description": "Potential Transformer",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFA06.A-manufacturer.pdf",
-                  "asBuiltDrawing": "assets/drawings/gt/11BFA06.A-asbuilt.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
+                  "asBuiltDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "902-10"
                 }
               ]
@@ -220,15 +220,15 @@
                 {
                   "id": "11BFA05.B",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFA05.B-manufacturer.pdf",
-                  "asBuiltDrawing": "assets/drawings/gt/11BFA05.B-asbuilt.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
+                  "asBuiltDrawing": "",
                   "drawingNumber": "902-15"
                 },
                 {
                   "id": "11BFA05.A",
                   "description": "Emergency Power System EMCC Feeder _1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFA05.A-manufacturer.pdf",
-                  "asBuiltDrawing": "assets/drawings/gt/11BFA05.A-asbuilt.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
+                  "asBuiltDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "902-15"
                 }
               ]
@@ -239,15 +239,15 @@
                 {
                   "id": "11BFA04.B",
                   "description": "Siemens Working MCC Feeder _1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFA04.B-manufacturer.pdf",
-                  "asBuiltDrawing": "assets/drawings/gt/11BFA04.B-asbuilt.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
+                  "asBuiltDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "902-15"
                 },
                 {
                   "id": "11BFA04.A",
                   "description": "Water Supply MCC Feeder _1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFA04.A-manufacturer.pdf",
-                  "asBuiltDrawing": "assets/drawings/gt/11BFA04.A-asbuilt.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
+                  "asBuiltDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "902-15"
                 }
               ]
@@ -258,15 +258,15 @@
                 {
                   "id": "11BFA03.B",
                   "description": "Water Treatment MCC Feeder _1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFA03.B-manufacturer.pdf",
-                  "asBuiltDrawing": "assets/drawings/gt/11BFA03.B-asbuilt.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
+                  "asBuiltDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "902-15"
                 },
                 {
                   "id": "11BFA03.A",
                   "description": "Main Building Working MCC Feeder _1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFA03.A-manufacturer.pdf",
-                  "asBuiltDrawing": "assets/drawings/gt/11BFA03.A-asbuilt.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
+                  "asBuiltDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "902-15"
                 }
               ]
@@ -277,8 +277,9 @@
                 {
                   "id": "11BFA02.A",
                   "description": "Sectional Switch (Bus Coupler)",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFA02.A-manufacturer.pdf",
-                  "drawingNumber": "902-14"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
+                  "drawingNumber": "902-14",
+                  "asBuiltDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr"
                 }
               ]
             },
@@ -288,8 +289,9 @@
                 {
                   "id": "11BFA01.A",
                   "description": "Main Building Working PC section A Power Incoming",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFA01.A-manufacturer.pdf",
-                  "drawingNumber": "902-12-1"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
+                  "drawingNumber": "902-12-1",
+                  "asBuiltDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr"
                 }
               ]
             }
@@ -306,8 +308,8 @@
                 {
                   "id": "11BFB01.A",
                   "description": "Main Building Working PC Section B Power Incoming",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB01.A-manufacturer.pdf",
-                  "asBuiltDrawing": "assets/drawings/gt/11BFB01.A-asbuilt.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
+                  "asBuiltDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "902-12-2"
                 }
               ]
@@ -318,14 +320,14 @@
                 {
                   "id": "11BFB02.B",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB02.B-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "902-15"
                 },
                 {
                   "id": "11BFB02.A",
                   "description": "200kVA outside plant power incoming (CMC, NEPC)",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB02.A-manufacturer.pdf",
-                  "asBuiltDrawing": "assets/drawings/gt/11BFB02.A-asbuilt.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
+                  "asBuiltDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "902-15"
                 }
               ]
@@ -336,15 +338,15 @@
                 {
                   "id": "11BFB03.B",
                   "description": "Water Treatment MCC Feeder _2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB03.B-manufacturer.pdf",
-                  "asBuiltDrawing": "assets/drawings/gt/11BFB03.B-asbuilt.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
+                  "asBuiltDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EXF1KjIPURxPgJqVuAeDAKMBYxXrBUTkXLYBpRanlmjbkQ?e=s4rN2i",
                   "drawingNumber": "902-15"
                 },
                 {
                   "id": "11BFB03.A",
                   "description": "Main Building Working MCC Feeder _2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB03.A-manufacturer.pdf",
-                  "asBuiltDrawing": "assets/drawings/gt/11BFB03.A-asbuilt.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
+                  "asBuiltDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "902-15"
                 }
               ]
@@ -355,14 +357,14 @@
                 {
                   "id": "11BFB04.B",
                   "description": "Emergency Power System EMCC Feeder _2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB04.B-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "asBuiltDrawing": "assets/drawings/gt/11BFB04.B-asbuilt.pdf",
                   "drawingNumber": "902-15"
                 },
                 {
                   "id": "11BFB04.A",
                   "description": "Water Supply MCC Feeder _2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB04.A-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "asBuiltDrawing": "assets/drawings/gt/11BFB04.A-asbuilt.pdf",
                   "drawingNumber": "902-15"
                 }
@@ -374,49 +376,49 @@
                 {
                   "id": "11BFB05.H",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB05.H-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "902-07-2"
                 },
                 {
                   "id": "11BFB05.G",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB05.G-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "902-07-2"
                 },
                 {
                   "id": "11BFB05.F",
                   "description": "MPB Crane",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB05.F-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "902-07-1"
                 },
                 {
                   "id": "11BFB05.E",
                   "description": "Electrical Inspection crane of generator magnetizing exciter",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB05.E-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BFB05.D",
                   "description": "UPS Bypass Power_2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB05.D-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "902-07-1"
                 },
                 {
                   "id": "11BFB05.C",
                   "description": "2 Air Compressor",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB05.C-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BFB05.B",
                   "description": "DM Water Electric Heater tank",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB05.B-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BFB05.A",
                   "description": "Control Cabinet of motor f.f. pump power _2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB05.A-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "asBuiltDrawing": "assets/drawings/gt/11BFB05.A-asbuilt.pdf",
                   "drawingNumber": "07-2"
                 }
@@ -458,13 +460,13 @@
                 {
                   "id": "11BFB06.G",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB06.G-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BFB06.F",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB06.F-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
@@ -494,7 +496,7 @@
                 {
                   "id": "11BFB06.A",
                   "description": "Potential Transformer",
-                  "manufacturerDrawing": "assets/drawings/gt/11BFB06.A-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "902-10"
                 }
               ]
@@ -512,7 +514,7 @@
                 {
                   "id": "11BJA01.A",
                   "description": "WTP MCC Feeder 1,2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA01.A-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "asBuiltDrawing": "assets/drawings/gt/11BJA01.A-asbuilt.pdf",
                   "drawingNumber": "902-16"
                 }
@@ -524,109 +526,109 @@
                 {
                   "id": "11BJA02.Q",
                   "description": "PC Power Cabinet 2 Make Up Water",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.Q-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA02.R",
                   "description": "PC Power Cabinet 1 Make Up Water",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.R-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA02.O",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.O-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA02.P",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.P-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-1"
                 },
                 {
                   "id": "11BJA02.M",
                   "description": "Examine and Repair Box WTP",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.M-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA02.N",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.N-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA02.K",
                   "description": "Lighting Power DB WTB",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.K-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-1"
                 },
                 {
                   "id": "11BJA02.L",
                   "description": "Air Conditioner DB WTB",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.L-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-1"
                 },
                 {
                   "id": "11BJA02.I",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.I-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA02.J",
                   "description": "Lighting Power DB of GuardHouse",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.J-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJA02.G",
                   "description": "Power of Laboratory",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.G-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA02.H",
                   "description": "Inhibiter Chemical Dosing Device",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.H-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA02.E",
                   "description": "Control Cabinet 2 Filter Water Pump and Regeneration Pump",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.E-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA02.F",
                   "description": "Unloading Alkali and acid Pump",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.F-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA02.C",
                   "description": "1 Intermediate Water Pump and Degasifier air Blower",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.C-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA02.D",
                   "description": "2 Intermediate Water Pump and Degasifier air Blower",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.D-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA02.A",
                   "description": "Control Cabinet of DM Water Pump",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.A-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA02.B",
                   "description": "Control Cabinet of Waste Water Pump",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA02.B-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 }
               ]
@@ -637,109 +639,109 @@
                 {
                   "id": "11BJA03.Q",
                   "description": "AC Power DB of AB_3",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.Q-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJA03.R",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.R-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJA03.O",
                   "description": "AC Power DB of AB_1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.O-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJA03.P",
                   "description": "AC Power DB of AB_2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.P-manufacturer.pdf",
+                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.P-manufacturer.pdfhttps://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJA03.M",
                   "description": "Lighting Power DB of AB_2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.M-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJA03.N",
                   "description": "Lighting Power DB of AB_3",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.N-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJA03.K",
                   "description": "AC Power DB of MS and SH_2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.K-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJA03.L",
                   "description": "Lighting Power DB of AB_1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.L-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJA03.I",
                   "description": "Lighting Power DB of MS and SH_2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.I-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJA03.J",
                   "description": "AC Power DB of MS and SH_1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.J-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJA03.G",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.G-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJA03.H",
                   "description": "Lighting Power DB of MS and SH_1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.H-manufacturer.pdf",
+                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.H-manufacturer.pdfhttps://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJA03.E",
                   "description": "Electrical Inspection Crane of Mechanical Workshop",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.E-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJA03.F",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.F-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJA03.C",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.C-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA03.D",
                   "description": "Examine and repair box of mechanical workshop",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.D-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA03.A",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.A-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA03.B",
                   "description": "Waste Water Pump Motor mechanical workshop",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA03.B-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 }
               ]
@@ -750,91 +752,91 @@
                 {
                   "id": "11BJA04.N",
                   "description": "Electrical Water Heater",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA04.N-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA04.O",
                   "description": "Alluminium Alloy Electrical Roll up Door 1 and 2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA04.O-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJA04.L",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA04.L-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJA04.M",
                   "description": "Ultraviolet Ray Disinfector",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA04.M-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJA04.J",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA04.J-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJA04.K",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA04.K-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJA04.H",
                   "description": "Electrical Inspection Crane of Store Warehouse",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA04.H-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJA04.I",
                   "description": "Lighting DB of Plant Road _2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA04.I-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJA04.F",
                   "description": "Power Communication System _1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA04.F-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJA04.G",
                   "description": "Power Communication System _2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA04.G-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJA04.D",
                   "description": "Mobile Type Compressor",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA04.D-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJA04.E",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA04.E-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA04.C",
                   "description": "Power of Metal Laboratory",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA04.C-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA04.B",
                   "description": "Power of Maintenance Shop Equipment",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA04.B-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJA04.A",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJA04.A-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 }
               ]
@@ -853,7 +855,7 @@
                   "id": "11BJB01.A",
                   "description": "WTP MCC Feeder Pump 1,2",
                   "drawingNumber": "902-16",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB01.A-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr"
                 }
               ]
             },
@@ -864,67 +866,67 @@
                   "id": "11BJB02.J",
                   "description": "StandBy",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB02.J-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB02.K",
                   "description": "StandBy",
                   "drawingNumber": "06-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB02.K-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB02.H",
                   "description": "Lighting Power DB of Pump Room",
                   "drawingNumber": "06-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB02.H-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB02.I",
                   "description": "StandBy",
                   "drawingNumber": "06-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB02.I-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB02.F",
                   "description": "Control Cabinet Raw Water forwarding Pump A and Raw Water forwarding Pump A",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB02.F-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB02.G",
                   "description": "StandBy",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB02.G-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB02.E",
                   "description": "Examine and Repair Box (1,2) Pump Room, Fuel Oil forwarding Pump Room",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB02.E-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB02.D",
                   "description": "Potable Water Pump A",
                   "drawingNumber": "03-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB02.D-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr"
                 },
                 {
                   "id": "11BJB02.C",
                   "description": "StandBy",
                   "drawingNumber": "03-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB02.C-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr"
                 },
                 {
                   "id": "11BJB02.B",
                   "description": "Mult Filter Back Washing Pump A",
                   "drawingNumber": "03-2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB02.B-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr"
                 },
                 {
                   "id": "11BJB02.A",
                   "description": "De Iron Filter Back Washing Pump A",
                   "drawingNumber": "03-2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB02.A-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr"
                 }
               ]
             },
@@ -935,67 +937,67 @@
                   "id": "11BJB03.J",
                   "description": "StandBy",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB03.J-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB03.K",
                   "description": "Emergency Diesel f.f. Pump control Power",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB03.K-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB03.H",
                   "description": "Electrical Crane of Air Compressor House",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB03.H-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB03.I",
                   "description": "StandBy",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB03.I-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB03.F",
                   "description": "Control Cabinet of Raw Water Forwarding Pump B",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB03.F-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB03.G",
                   "description": "StandBy",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB03.G-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB03.E",
                   "description": "Control Cabinet of De Iron Filter",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB03.E-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB03.D",
                   "description": "Potable Water Pump B",
                   "drawingNumber": "03-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB03.D-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr"
                 },
                 {
                   "id": "11BJB03.C",
                   "description": "StandBy",
                   "drawingNumber": "03-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB03.C-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr"
                 },
                 {
                   "id": "11BJB03.B",
                   "description": "Mult Filter Back Washing Pump B",
                   "drawingNumber": "03-2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB03.B-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr"
                 },
                 {
                   "id": "11BJB03.A",
                   "description": "De Iron Filter Back Washing Pump B",
                   "drawingNumber": "03-2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB03.A-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr"
                 }
               ]
             },
@@ -1006,79 +1008,79 @@
                   "id": "11BJB04.L",
                   "description": "StandBy",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB04.L-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB04.M",
                   "description": "StandBy",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB04.M-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB04.J",
                   "description": "Control Cabinet of Cooling Tower",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB04.J-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB04.K",
                   "description": "StandBy",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB04.K-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB04.H",
                   "description": "StandBy",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB04.H-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB04.I",
                   "description": "StandBy",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB04.I-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB04.F",
                   "description": "415V power DB of Pump Room",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB04.F-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB04.G",
                   "description": "Oil Sewage Treatment Equipment",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB04.G-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB04.D",
                   "description": "Control Cabinet of Jockey Pump",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB04.D-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB04.E",
                   "description": "Ultraviolet Ray Disinfector",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB04.E-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB04.C",
                   "description": "StandBy",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB04.C-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB04.B",
                   "description": "Control Cabinet of Deep Well Pump",
                   "drawingNumber": "07-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB04.B-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ"
                 },
                 {
                   "id": "11BJB04.A",
                   "description": "StandBy",
                   "drawingNumber": "03-1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJB04.A-manufacturer.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr"
                 }
               ]
             }
@@ -1095,37 +1097,37 @@
                 {
                   "id": "11BJC05.F",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC05.F-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC05.E",
                   "description": "Waste Water Pump Motor of Gas Turbine",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC05.E-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC05.D",
                   "description": "CCCW Pump B",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC05.D-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "03-2"
                 },
                 {
                   "id": "11BJC05.C",
                   "description": "CCCW Pump A",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC05.C-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "03-2"
                 },
                 {
                   "id": "11BJC05.B",
                   "description": "Oil Forwarding Pump B",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC05.B-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "03-2"
                 },
                 {
                   "id": "11BJC05.A",
                   "description": "Oil Forwarding Pump A",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC05.A-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "03-2"
                 }
               ]
@@ -1136,79 +1138,79 @@
                 {
                   "id": "11BJC04.M",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC04.M-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC04.L",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC04.L-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC04.K",
                   "description": "Electrical Water Heater",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC04.K-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC04.J",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC04.J-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJC04.I",
                   "description": "Lighting and Heating Distribution Box",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC04.I-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC04.H",
                   "description": "Lighting Power of Chimney",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC04.H-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJC04.G",
                   "description": "AC Power of EDG (Emergency Diesel Generator)",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC04.G-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJC04.F",
                   "description": "Lighting Power of DB of CCB _2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC04.F-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-1"
                 },
                 {
                   "id": "11BJC04.E",
                   "description": "Lighting Power of DB of CCB _1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC04.E-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-1"
                 },
                 {
                   "id": "11BJC04.D",
                   "description": "Lighting Power of DB of Main Building",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC04.D-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-1"
                 },
                 {
                   "id": "11BJC04.C",
                   "description": "Examine and Repair Box of DB (2,4,5) of Main Building",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC04.C-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC04.B",
                   "description": "Examine and Repair Box of DB (1,3) of Main Building",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC04.B-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC04.A",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC04.A-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "03-1"
                 }
               ]
@@ -1219,85 +1221,85 @@
                 {
                   "id": "11BJC03.N",
                   "description": "Scale Inhibitor Dosing Device",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC03.N-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJC03.M",
                   "description": "NaCIO Dosing Device",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC03.M-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJC03.L",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC03.L-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-1"
                 },
                 {
                   "id": "11BJC03.K",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC03.K-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-1"
                 },
                 {
                   "id": "11BJC03.J",
                   "description": "Fire Draft Roof Fan _2 of CCB",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC03.J-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-1"
                 },
                 {
                   "id": "11BJC03.I",
                   "description": "Fire Draft Roof Fan _1 of CCB",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC03.I-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-1"
                 },
                 {
                   "id": "11BJC03.H",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC03.H-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJC03.G",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC03.G-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-2"
                 },
                 {
                   "id": "11BJC03.F",
                   "description": "Environment Air Monitoring Power",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC03.F-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJC03.E",
                   "description": "AC Power DB Box _1 CCB",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC03.E-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-1"
                 },
                 {
                   "id": "11BJC03.D",
                   "description": "Control Cabinet of Explosion Proof Roof Fan",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC03.D-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC03.C",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC03.C-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-1"
                 },
                 {
                   "id": "11BJC03.B",
                   "description": "Charge Power _1 of 110V DC Battery",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC03.B-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC03.A",
                   "description": "AC Power DB Box _2 CCB",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC03.A-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "06-1"
                 }
               ]
@@ -1308,97 +1310,97 @@
                 {
                   "id": "11BJC02.P",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC02.P-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJC02.O",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC02.O-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC02.N",
                   "description": "Fire Draft Roof Fan _3 of CCB",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC02.N-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC02.M",
                   "description": "On Load Tap Changer",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC02.M-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC02.L",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC02.L-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJC02.K",
                   "description": "CEMS",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC02.K-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJC02.J",
                   "description": "Test Power Cabinet of Relay Room",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC02.J-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC02.I",
                   "description": "Printer Power of Relay Room",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC02.I-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC02.H",
                   "description": "Power of Micro Positive Pressure Device",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC02.H-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC02.G",
                   "description": "415V AC Power Cabinet",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC02.G-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC02.F",
                   "description": "Control Cabinet Power _2 of MT Cooler",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC02.F-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJC02.E",
                   "description": "Control Cabinet Power _1 of MT Cooler",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC02.E-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-2"
                 },
                 {
                   "id": "11BJC02.D",
                   "description": "No1, No3 Alluminium Alloy Electric Roll up Door",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC02.D-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC02.C",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC02.C-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC02.B",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC02.B-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BJC02.A",
                   "description": "Mobile Typed Oil Cleaned Device",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC02.A-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 }
               ]
@@ -1409,7 +1411,7 @@
                 {
                   "id": "11BJC01.A",
                   "description": "Main Building Working MCC Feeder _2 AND 1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BJC01.A-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "D0902-16"
                 }
               ]
@@ -1427,14 +1429,14 @@
                 {
                   "id": "11BMA01.B",
                   "description": "Whole Power Plant Emergency MCC Feeder _2 (PC B)",
-                  "manufacturerDrawing": "assets/drawings/gt/11BMA01.B-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "asBuiltDrawing": "assets/drawings/gt/11BMA01.B-manufacturer.pdf",
                   "drawingNumber": "902-17-02"
                 },
                 {
                   "id": "11BMA01.A",
                   "description": "Whole Power Plant Emergency MCC Feeder _1 (PC A)",
-                  "manufacturerDrawing": "assets/drawings/gt/11BMA01.A-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "asBuiltDrawing": "assets/drawings/gt/11BMA01.B-manufacturer.pdf",
                   "drawingNumber": "902-17-01"
                 }
@@ -1446,13 +1448,13 @@
                 {
                   "id": "11BMA02.B",
                   "description": "Siemens Emergency MCC Feeder _2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BMA02.B-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "902-15"
                 },
                 {
                   "id": "11BMA02.A",
                   "description": "Whole Power Plant Emergency MCC Feeder _3 (EDG)",
-                  "manufacturerDrawing": "assets/drawings/gt/11BMA02.A-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "902-18"
                 }
               ]
@@ -1463,73 +1465,73 @@
                 {
                   "id": "11BMA03.K",
                   "description": "PIS Communication System Power _2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BMA03.K-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BMA03.L",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BMA03.L-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BMA03.I",
                   "description": "As Built",
-                  "manufacturerDrawing": "assets/drawings/gt/11BMA03.I-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BMA03.J",
                   "description": "As Built",
-                  "manufacturerDrawing": "assets/drawings/gt/11BMA03.J-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BMA03.G",
                   "description": "415V AC Power Cabinet",
-                  "manufacturerDrawing": "assets/drawings/gt/11BMA03.G-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BMA03.H",
                   "description": "240V AC Power Cabinet",
-                  "manufacturerDrawing": "assets/drawings/gt/11BMA03.H-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BMA03.E",
                   "description": "UPS Working Power _1",
-                  "manufacturerDrawing": "assets/drawings/gt/11BMA03.E-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BMA03.F",
                   "description": "UPS Working Power _2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BMA03.F-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BMA03.C",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BMA03.C-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BMA03.D",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/11BMA03.D-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BMA03.B",
                   "description": "Charge Power of 110V DC Battery _2",
-                  "manufacturerDrawing": "assets/drawings/gt/11BMA03.B-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 },
                 {
                   "id": "11BMA03.A",
                   "description": "Potential Transformer",
-                  "manufacturerDrawing": "assets/drawings/gt/11BMA03.A-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ESi2L4qY3zpFseObVJ6ihqoBC0ZIsQQILUb4eqTEkUIAqQ?e=D5yqOr",
                   "drawingNumber": "902-10"
                 }
               ]
@@ -1635,7 +1637,7 @@
                 {
                   "id": "Spare1",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/spare1-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 }
               ]
@@ -1646,7 +1648,7 @@
                 {
                   "id": "Spare2",
                   "description": "StandBy",
-                  "manufacturerDrawing": "assets/drawings/gt/spare2-manufacturer.pdf",
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EcgzalPvTitKrVREEyxlnjsBLxWSbqQ5Ua4u4ApMSNj0GA?e=20z8YJ",
                   "drawingNumber": "07-1"
                 }
               ]
