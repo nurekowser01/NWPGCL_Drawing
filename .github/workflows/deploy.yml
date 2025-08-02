@@ -86,6 +86,11 @@ jobs:
       - name: Add .nojekyll file
         run: touch dist/power-plant-drawing-app/browser/.nojekyll
 
+      - name: Delete gh-pages branch (if exists)
+        run: |
+          git fetch origin gh-pages || echo "Branch does not exist"
+          git push origin --delete gh-pages || echo "Branch did not exist"
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
