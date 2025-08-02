@@ -26,38 +26,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Create environment files (correct path)
-        run: |
-          # Create the exact path your app expects
-          mkdir -p src/environments
-          
-          # Development environment
-          echo "export const environment = { 
-            production: false, 
-            github: { 
-              api: 'https://api.github.com', 
-              repo: 'nurekowser01/NWPGCL_Drawing', 
-              token: '' 
-            } 
-          };" > src/environments/environment.ts
-          
-          # Production environment with secure token injection
-          echo "export const environment = { 
-            production: true, 
-            github: { 
-              api: 'https://api.github.com', 
-              repo: 'nurekowser01/NWPGCL_Drawing', 
-              token: '${{ secrets.GH_TOKEN }}' 
-            } 
-          };" > src/environments/environment.prod.ts
-          
-          # Verify
-          echo "Environment files created at:"
-          ls -la src/environments/
-          echo "Token ending: ${{ secrets.GH_TOKEN }}"
-
       - name: Build Angular app
-        run: npm run build -- --configuration production --base-href /NWPGCL_Drawing/
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          # Inject secrets directly into index.html
+          sed -i '/<\/title>/a \
+          <script>\
+            window.GITHUB_API = "https://api.github.com";\
+            window.GITHUB_REPO = "nurekowser01/NWPGCL_Drawing";\
+            window.GITHUB_TOKEN = "'"$GH_TOKEN"'";\
+          </script>' src/index.html
+          
+          npm run build -- --configuration production --base-href /NWPGCL_Drawing/
 
       - name: Add .nojekyll file
         run: touch dist/power-plant-drawing-app/browser/.nojekyll

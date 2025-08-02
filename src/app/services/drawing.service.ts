@@ -8,9 +8,12 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class DrawingService {
-  private readonly GITHUB_API = environment.github.api;
-  private readonly REPO = environment.github.repo;
+
+ private readonly GITHUB_API = (window as any).GITHUB_API || 'https://api.github.com';
+  private readonly REPO = (window as any).GITHUB_REPO || 'nurekowser01/NWPGCL_Drawing';
   private readonly FILE_PATH = 'src/assets/data/drawings.json';
+  private dataVersion = 0;
+
   private cachedData$!: Observable<any>; // Definite assignment assertion
 
   constructor(private http: HttpClient) {

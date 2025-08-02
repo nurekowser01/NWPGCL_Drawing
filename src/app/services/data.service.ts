@@ -10,10 +10,10 @@ import { Bus } from '../models/bus.model';
   providedIn: 'root'
 })
 export class DataService {
-  private readonly GITHUB_API = environment.github?.api || 'https://api.github.com';
-  private readonly REPO = environment.github?.repo || 'nurekowser01/NWPGCL_Drawing';
+private readonly GITHUB_API = (window as any).GITHUB_API || 'https://api.github.com';
+  private readonly REPO = (window as any).GITHUB_REPO || 'nurekowser01/NWPGCL_Drawing';
+  private readonly TOKEN = (window as any).GITHUB_TOKEN || '';
   private readonly FILE_PATH = 'src/assets/data/drawings.json';
-  private readonly TOKEN = environment.github?.token || ''; // Will be set by CI
   private dataVersion = 0;
 
 
