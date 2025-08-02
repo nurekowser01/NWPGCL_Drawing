@@ -1,0 +1,40 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ master ]  # Runs when you push to the 'main' branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # Uses a Linux environment (avoids Windows path issues)
+    
+    steps:
+      # Step 1: Check out your repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Install Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18  # Use Node.js 18 (stable for Angular)
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm ci  # 'ci' is faster and more reliable than 'install'
+
+      # Step 4: Build your Angular app
+      - name: Build Angular app
+        run: |
+          npm run build -- --configuration production --base-href /NWPGCL_Drawing/
+
+      # Step 5: Create .nojekyll file (required for SPAs)
+      - name: Add .nojekyll file
+        run: touch dist/power-plant-drawing-app/browser/.nojekyll
+
+      # Step 6: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Auto-generated token (no setup needed)
+          publish_dir: ./dist/power-plant-drawing-app/browser  # Your build output folder
