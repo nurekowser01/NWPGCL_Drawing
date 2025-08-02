@@ -10,9 +10,10 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class DataService {
-  private readonly GITHUB_API = environment.github.api;
-  private readonly REPO = environment.github.repo;
-private readonly TOKEN = (process.env as any)['NG_APP_GITHUB_TOKEN'] || '';
+    private readonly GITHUB_API = 'https://api.github.com';
+  private readonly REPO = 'nurekowser01/NWPGCL_Drawing';
+  private readonly TOKEN = environment.github.token;
+
   private readonly FILE_PATH = 'src/assets/data/drawings.json';
   private dataVersion = 0;
 
