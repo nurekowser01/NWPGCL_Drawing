@@ -14,6 +14,7 @@ export class DataService {
   private readonly REPO = environment.github.repo;
   private readonly FILE_PATH = 'src/assets/data/drawings.json';
   private readonly TOKEN = environment.github.token;
+  private readonly BRANCH = 'main-1'; // Centralized branch name
   private dataVersion = 0; // Add version counter
 
   constructor(private http: HttpClient) { }
@@ -60,7 +61,7 @@ export class DataService {
   }
 
   private getFileWithSha(): Observable<{content: string, sha: string}> {
-    const url = `${this.GITHUB_API}/repos/${this.REPO}/contents/${this.FILE_PATH}?ref=master-2&t=${Date.now()}`;
+    const url = `${this.GITHUB_API}/repos/${this.REPO}/contents/${this.FILE_PATH}?ref=${this.BRANCH}&t=${Date.now()}`;
     
     return this.http.get<{content: string, sha: string}>(url, {
       headers: this.getHeaders()
@@ -102,7 +103,7 @@ export class DataService {
       message,
       content: btoa(unescape(encodeURIComponent(content))),
       sha,
-      branch: 'master'
+      branch: this.BRANCH
     }, {
       headers: this.getHeaders()
     });

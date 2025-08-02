@@ -1,67 +1,53 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { map, catchError, shareReplay } from 'rxjs/operators';
-import { environment } from '../../environments/environment';
+import { map, shareReplay } from 'rxjs/operators';
+import drawingsData from '../../assets/data/drawings.json';
+
+// Import models (create these interfaces in src/models)
+import { Bus } from '../models/bus.model';
+import { Panel } from '../models/panel.model';
+import { Section } from '../models/section.model';
+
+import { Breaker } from '../models/breaker.model';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class DrawingService {
-  private readonly GITHUB_API = environment.github.api;
-  private readonly REPO = environment.github.repo;
-  private readonly FILE_PATH = 'src/assets/data/drawings.json';
-  private cachedData$!: Observable<any>; // Definite assignment assertion
+  private cachedData$: Observable<{ sections: Section[] }>;
 
-  constructor(private http: HttpClient) {
-    this.cachedData$ = this.loadData(); // Initialize in constructor
+  constructor() {
+    this.cachedData$ = of({ sections: drawingsData.sections }).pipe(
+      shareReplay(1)
+    );
   }
 
-  private loadData(): Observable<any> {
-    return this.http.get(`${this.GITHUB_API}/repos/${this.REPO}/contents/${this.FILE_PATH}`, {
-      headers: this.getHeaders()
-    }).pipe(
-      map((response: any) => {
-        const content = atob(response.content.replace(/\s/g, ''));
-        return JSON.parse(content);
-      }),
-      shareReplay(1), // Cache the latest data
-      catchError(error => {
-        console.error('Failed to load from GitHub, using fallback:', error);
-        return this.getLocalFallback();
+  getSection(sectionId: string): Observable<Section | undefined> {
+    return this.cachedData$.pipe(
+      map(data => data.sections.find(s => s.id === sectionId))
+    );
+  }
+
+  getBus(busId: string): Observable<Bus | undefined> {
+    return this.cachedData$.pipe(
+      map(data => {
+        for (const section of data.sections) {
+          const foundBus = section.buses?.find(b => b.id === busId);
+          if (foundBus) return foundBus;
+        }
+        return undefined;
       })
     );
   }
 
-  private getLocalFallback(): Observable<any> {
-    return this.http.get('assets/data/drawings.json').pipe(
-      catchError(() => of({ sections: [] })) // Empty fallback
-    );
-  }
-
-  getSections(): Observable<any[]> {
-    return this.cachedData$.pipe(
-      map(data => data?.sections || [])
-    );
-  }
-
-  getSection(sectionId: string): Observable<any> {
-    return this.cachedData$.pipe(
-      map(data => data?.sections?.find((s: any) => s.id === sectionId))
-    );
-  }
-
-  getBreaker(breakerId: string): Observable<any> {
+  getPanel(panelId: string): Observable<Panel | undefined> {
     return this.cachedData$.pipe(
       map(data => {
-        if (!data?.sections) return undefined;
-        
         for (const section of data.sections) {
           for (const bus of section.buses || []) {
-            for (const panel of bus.panels || []) {
-              const breaker = panel.breakers?.find((b: any) => b.id === breakerId);
-              if (breaker) return breaker;
-            }
+            const foundPanel = bus.panels?.find(p => p.id === panelId);
+            if (foundPanel) return foundPanel;
           }
         }
         return undefined;
@@ -69,15 +55,19 @@ export class DrawingService {
     );
   }
 
-  refreshData(): void {
-    this.cachedData$ = this.loadData();
-  }
-
-  private getHeaders() {
-    return {
-      'Authorization': `token ${environment.github.token}`,
-      'Accept': 'application/vnd.github.v3+json',
-      'X-GitHub-Api-Version': '2022-11-28'
-    };
+  getBreaker(breakerId: string): Observable<Breaker | undefined> {
+    return this.cachedData$.pipe(
+      map(data => {
+        for (const section of data.sections) {
+          for (const bus of section.buses || []) {
+            for (const panel of bus.panels || []) {
+              const foundBreaker = panel.breakers?.find(b => b.id === breakerId);
+              if (foundBreaker) return foundBreaker;
+            }
+          }
+        }
+        return undefined;
+      })
+    );
   }
 }
