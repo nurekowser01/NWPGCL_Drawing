@@ -25,17 +25,8 @@ jobs:
           mkdir -p src/app/environments
           # Development environment
           echo "export const environment = { production: false, github: { api: 'https://api.github.com', repo: 'nurekowser01/NWPGCL_Drawing', token: '' } };" > src/app/environments/environment.ts
-          # Production environment using template
-          cat <<EOF > src/app/environments/environment.prod.ts
-          export const environment = {
-            production: true,
-            github: {
-              api: 'https://api.github.com',
-              repo: 'nurekowser01/NWPGCL_Drawing',
-              token: '${{ secrets.GH_TOKEN }}'
-            }
-          };
-          EOF
+          # Production environment with JSON stringified token
+          echo "export const environment = { production: true, github: { api: 'https://api.github.com', repo: 'nurekowser01/NWPGCL_Drawing', token: JSON.parse('$(node -p 'JSON.stringify(process.env.GH_TOKEN || "")')') } };" > src/app/environments/environment.prod.ts
           # Verify file contents
           cat src/app/environments/environment.prod.ts
 
