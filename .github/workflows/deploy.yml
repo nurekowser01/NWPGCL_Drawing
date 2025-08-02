@@ -30,15 +30,17 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          # Inject secrets directly into index.html
-          sed -i '/<\/title>/a \
-          <script>\
-            window.GITHUB_API = "https://api.github.com";\
-            window.GITHUB_REPO = "nurekowser01/NWPGCL_Drawing";\
-            window.GITHUB_TOKEN = "'"$GH_TOKEN"'";\
-          </script>' src/index.html
+          # Generate config file
+          mkdir -p src/app/core
+          cat > src/app/core/github.config.ts <<EOF
+          export const GITHUB_CONFIG = {
+            api: 'https://api.github.com',
+            repo: 'nurekowser01/NWPGCL_Drawing',
+            token: '$GH_TOKEN'
+          };
+          EOF
           
-          npm run build -- --configuration production --base-href /NWPGCL_Drawing/
+          npm run build -- --configuration production --base-href /NWPGCL_Drawing/ --output-hashing=all
 
       - name: Add .nojekyll file
         run: touch dist/power-plant-drawing-app/browser/.nojekyll

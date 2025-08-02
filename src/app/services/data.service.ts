@@ -4,17 +4,17 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, map, retry, switchMap, delay } from 'rxjs/operators';
 import { Breaker } from '../models/breaker.model';
 import { Bus } from '../models/bus.model';
+import { GITHUB_CONFIG } from '../github.config';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-private readonly GITHUB_API = (window as any).GITHUB_API || 'https://api.github.com';
-  private readonly REPO = (window as any).GITHUB_REPO || 'nurekowser01/NWPGCL_Drawing';
-  private readonly TOKEN = (window as any).GITHUB_TOKEN || '';
+  private readonly GITHUB_API = GITHUB_CONFIG.api;
+  private readonly REPO = GITHUB_CONFIG.repo;
+  private readonly TOKEN = GITHUB_CONFIG.token;
   private readonly FILE_PATH = 'src/assets/data/drawings.json';
   private dataVersion = 0;
-
 
   constructor(private http: HttpClient) { }
 
@@ -42,7 +42,6 @@ private readonly GITHUB_API = (window as any).GITHUB_API || 'https://api.github.
         breaker.manufacturerDrawing = updatedBreaker.manufacturerDrawing;
         breaker.asBuiltDrawing = updatedBreaker.asBuiltDrawing;
 
-        // Prepare the update with retry logic
         return this.updateFileWithRetry(
           JSON.stringify(currentData, null, 2),
           fileData.sha,
@@ -53,36 +52,40 @@ private readonly GITHUB_API = (window as any).GITHUB_API || 'https://api.github.
       }),
       retry(2),
       catchError(error => {
-        console.error('Failed to update breaker:', error);
-        return throwError(() => new Error('Could not update breaker. Please refresh and try again.'));
+        console.error('Update failed:', this.sanitizeError(error));
+        return throwError(() => new Error('Update failed. Please try again.'));
       })
     );
   }
 
   private getFileWithSha(): Observable<{content: string, sha: string}> {
-    const url = `${this.GITHUB_API}/repos/${this.REPO}/contents/${this.FILE_PATH}?ref=master&t=${Date.now()}`;
+    if (!this.validateToken()) {
+      return throwError(() => new Error('Invalid GitHub token'));
+    }
+
+    const url = `${this.GITHUB_API}/repos/${this.REPO}/contents/${this.FILE_PATH}`;
     
     return this.http.get<{content: string, sha: string}>(url, {
-      headers: this.getHeaders()
+      headers: this.getHeaders(),
+      params: { ref: 'master', t: Date.now() }
     }).pipe(
       map(response => ({
-        content: atob(response.content.replace(/\s/g, '')),
+        content: this.decodeContent(response.content),
         sha: response.sha
       })),
       catchError(error => {
-        console.error('Failed to get file with SHA:', error);
+        console.error('Fetch failed:', this.sanitizeError(error));
         return throwError(() => error);
       })
     );
   }
 
-  private updateFileWithRetry(content: string, originalSha: string, message: string, attempt = 1): Observable<void> {
-    return this.updateFile(content, originalSha, message).pipe(
+  private updateFileWithRetry(content: string, sha: string, message: string, attempt = 1): Observable<void> {
+    return this.updateFile(content, sha, message).pipe(
       catchError(error => {
         if (this.isConflictError(error) && attempt < 3) {
-          // SHA mismatch - get fresh version and retry
           return this.getFileWithSha().pipe(
-            delay(300), // Small delay between retries
+            delay(300),
             switchMap(fileData => {
               if (!fileData) {
                 return throwError(() => new Error('Failed to get file data for retry'));
@@ -100,7 +103,7 @@ private readonly GITHUB_API = (window as any).GITHUB_API || 'https://api.github.
     const url = `${this.GITHUB_API}/repos/${this.REPO}/contents/${this.FILE_PATH}`;
     return this.http.put<void>(url, {
       message,
-      content: btoa(unescape(encodeURIComponent(content))),
+      content: this.encodeContent(content),
       sha,
       branch: 'master'
     }, {
@@ -108,20 +111,36 @@ private readonly GITHUB_API = (window as any).GITHUB_API || 'https://api.github.
     });
   }
 
-  private isConflictError(error: any): boolean {
-    return error && error.status === 409;
+  // Helper methods
+  private validateToken(): boolean {
+    return !!this.TOKEN && this.TOKEN !== '##GITHUB_TOKEN##';
   }
 
   private getHeaders() {
-
-    // console.log('Using tokens:', environment.github.token ? '***' + environment.github.token.slice(-4) : 'No token');
-
-    console.log('Using tokens1:', this.TOKEN );
-
     return {
-      'Authorization': `token ${this.TOKEN}`,
+      'Authorization': `Bearer ${this.TOKEN}`,
       'Accept': 'application/vnd.github.v3+json',
       'X-GitHub-Api-Version': '2022-11-28'
     };
+  }
+
+  private decodeContent(content: string): string {
+    return atob(content.replace(/\s/g, ''));
+  }
+
+  private encodeContent(content: string): string {
+    return btoa(unescape(encodeURIComponent(content)));
+  }
+
+  private isConflictError(error: any): boolean {
+    return error?.status === 409;
+  }
+
+  private sanitizeError(error: any): any {
+    const sanitized = {...error};
+    if (sanitized.headers?.Authorization) {
+      sanitized.headers.Authorization = '***REDACTED***';
+    }
+    return sanitized;
   }
 }

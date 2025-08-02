@@ -42,3 +42,6 @@ testem.log
 Thumbs.db
 /src/app/environments
 /src/environments/environment.ts
+src/app/github.config.ts:
+src/environments/environment.prod.ts
+src/app/github.config.ts

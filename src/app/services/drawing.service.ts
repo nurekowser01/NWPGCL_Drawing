@@ -2,36 +2,40 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { map, catchError, shareReplay } from 'rxjs/operators';
+import { GITHUB_CONFIG } from '../github.config';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DrawingService {
-
- private readonly GITHUB_API = (window as any).GITHUB_API || 'https://api.github.com';
-  private readonly REPO = (window as any).GITHUB_REPO || 'nurekowser01/NWPGCL_Drawing';
+  private readonly GITHUB_API = GITHUB_CONFIG.api;
+  private readonly REPO = GITHUB_CONFIG.repo;
+  private readonly TOKEN = GITHUB_CONFIG.token;
   private readonly FILE_PATH = 'src/assets/data/drawings.json';
-    private readonly TOKEN = (window as any).GITHUB_TOKEN || '';
-
-  private dataVersion = 0;
-
-  private cachedData$!: Observable<any>; // Definite assignment assertion
+  private cachedData$: Observable<any>;
 
   constructor(private http: HttpClient) {
-    this.cachedData$ = this.loadData(); // Initialize in constructor
+    this.cachedData$ = this.loadData().pipe(shareReplay(1));
   }
 
   private loadData(): Observable<any> {
+    if (!this.validateToken()) {
+      console.warn('Using local fallback - no valid token');
+      return this.getLocalFallback();
+    }
+
     return this.http.get(`${this.GITHUB_API}/repos/${this.REPO}/contents/${this.FILE_PATH}`, {
       headers: this.getHeaders()
     }).pipe(
       map((response: any) => {
-        const content = atob(response.content.replace(/\s/g, ''));
-        return JSON.parse(content);
+        try {
+          return JSON.parse(this.decodeContent(response.content));
+        } catch (e) {
+          throw new Error('Failed to parse response');
+        }
       }),
-      shareReplay(1), // Cache the latest data
       catchError(error => {
-        console.error('Failed to load from GitHub, using fallback:', error);
+        console.error('GitHub load failed:', this.sanitizeError(error));
         return this.getLocalFallback();
       })
     );
@@ -39,10 +43,11 @@ export class DrawingService {
 
   private getLocalFallback(): Observable<any> {
     return this.http.get('assets/data/drawings.json').pipe(
-      catchError(() => of({ sections: [] })) // Empty fallback
+      catchError(() => of({ sections: [] }))
     );
   }
 
+  // Public methods
   getSections(): Observable<any[]> {
     return this.cachedData$.pipe(
       map(data => data?.sections || [])
@@ -74,16 +79,31 @@ export class DrawingService {
   }
 
   refreshData(): void {
-    this.cachedData$ = this.loadData();
+    this.cachedData$ = this.loadData().pipe(shareReplay(1));
+  }
+
+  // Helper methods
+  private validateToken(): boolean {
+    return !!this.TOKEN && this.TOKEN !== '##GITHUB_TOKEN##';
   }
 
   private getHeaders() {
-    console.log('Using tokens1:', this.TOKEN );
-
     return {
-      'Authorization': `token ${this.TOKEN}`,
+      'Authorization': `Bearer ${this.TOKEN}`,
       'Accept': 'application/vnd.github.v3+json',
       'X-GitHub-Api-Version': '2022-11-28'
     };
+  }
+
+  private decodeContent(content: string): string {
+    return atob(content.replace(/\s/g, ''));
+  }
+
+  private sanitizeError(error: any): any {
+    const sanitized = {...error};
+    if (sanitized.headers?.Authorization) {
+      sanitized.headers.Authorization = '***REDACTED***';
+    }
+    return sanitized;
   }
 }
