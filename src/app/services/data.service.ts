@@ -4,16 +4,15 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, map, retry, switchMap, delay } from 'rxjs/operators';
 import { Breaker } from '../models/breaker.model';
 import { Bus } from '../models/bus.model';
-import { GITHUB_CONFIG } from '../github.config';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-  private readonly GITHUB_API = GITHUB_CONFIG.api;
-  private readonly REPO = GITHUB_CONFIG.repo;
-  private readonly TOKEN = GITHUB_CONFIG.token;
+   private readonly GITHUB_API = 'https://api.github.com';
+  private readonly REPO = 'nurekowser01/NWPGCL_Drawing';
   private readonly FILE_PATH = 'src/assets/data/drawings.json';
+  private readonly TOKEN = (process.env as any)['GITHUB_TOKEN'] || ''; // From build env
   private dataVersion = 0;
 
   constructor(private http: HttpClient) { }
@@ -117,6 +116,10 @@ export class DataService {
   }
 
   private getHeaders() {
+    if (!this.TOKEN) {
+      console.error('GitHub token not configured');
+      throw new Error('API authentication failed');
+    }
     return {
       'Authorization': `Bearer ${this.TOKEN}`,
       'Accept': 'application/vnd.github.v3+json',

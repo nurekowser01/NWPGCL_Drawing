@@ -37,6 +37,19 @@
           },
           "configurations": {
             "production": {
+
+               "fileReplacements": [
+                  {
+                    "replace": "src/environments/environment.ts",
+                    "with": "src/environments/environment.prod.ts"
+                  }
+                ],
+                "optimization": true,
+                "vendorChunk": false,
+                "buildOptimizer": true,
+                "environment": {
+                  "GITHUB_TOKEN": ""
+                },
               
               "budgets": [
                 {

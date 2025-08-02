@@ -2,16 +2,15 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { map, catchError, shareReplay } from 'rxjs/operators';
-import { GITHUB_CONFIG } from '../github.config';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DrawingService {
-  private readonly GITHUB_API = GITHUB_CONFIG.api;
-  private readonly REPO = GITHUB_CONFIG.repo;
-  private readonly TOKEN = GITHUB_CONFIG.token;
+  private readonly GITHUB_API = 'https://api.github.com';
+  private readonly REPO = 'nurekowser01/NWPGCL_Drawing';
   private readonly FILE_PATH = 'src/assets/data/drawings.json';
+  private readonly TOKEN = (process.env as any)['GITHUB_TOKEN'] || '';
   private cachedData$: Observable<any>;
 
   constructor(private http: HttpClient) {
@@ -19,25 +18,15 @@ export class DrawingService {
   }
 
   private loadData(): Observable<any> {
-    if (!this.validateToken()) {
-      console.warn('Using local fallback - no valid token');
+    if (!this.TOKEN) {
       return this.getLocalFallback();
     }
 
     return this.http.get(`${this.GITHUB_API}/repos/${this.REPO}/contents/${this.FILE_PATH}`, {
       headers: this.getHeaders()
     }).pipe(
-      map((response: any) => {
-        try {
-          return JSON.parse(this.decodeContent(response.content));
-        } catch (e) {
-          throw new Error('Failed to parse response');
-        }
-      }),
-      catchError(error => {
-        console.error('GitHub load failed:', this.sanitizeError(error));
-        return this.getLocalFallback();
-      })
+      map((response: any) => JSON.parse(atob(response.content.replace(/\s/g, '')))),
+      catchError(() => this.getLocalFallback())
     );
   }
 
