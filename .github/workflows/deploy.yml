@@ -26,7 +26,8 @@ jobs:
       # Step 4: Build your Angular app
       - name: Build Angular app
         run: |
-          npm run build -- --configuration production --base-href /NWPGCL_Drawing/
+        echo "export const environment = { production: true, github: { api: 'https://api.github.com', repo: 'nurekowser01/NWPGCL_Drawing', token: '${{ secrets.GH_TOKEN }}' };" > src/environments/environment.prod.ts
+        npm run build -- --configuration production --base-href /NWPGCL_Drawing/
 
       # Step 5: Create .nojekyll file (required for SPAs)
       - name: Add .nojekyll file

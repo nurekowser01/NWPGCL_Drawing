@@ -10,11 +10,12 @@ import { Bus } from '../models/bus.model';
   providedIn: 'root'
 })
 export class DataService {
-  private readonly GITHUB_API = environment.github.api;
-  private readonly REPO = environment.github.repo;
+  private readonly GITHUB_API = environment.github?.api || 'https://api.github.com';
+  private readonly REPO = environment.github?.repo || 'nurekowser01/NWPGCL_Drawing';
   private readonly FILE_PATH = 'src/assets/data/drawings.json';
-  private readonly TOKEN = environment.github.token;
-  private dataVersion = 0; // Add version counter
+  private readonly TOKEN = environment.github?.token || ''; // Will be set by CI
+  private dataVersion = 0;
+
 
   constructor(private http: HttpClient) { }
 
