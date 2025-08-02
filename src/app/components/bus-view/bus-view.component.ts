@@ -11,7 +11,7 @@ import { PanelComponent } from '../panel/panel.component';
 @Component({
   selector: 'app-bus-view',
   standalone: true,
-  imports: [CommonModule, MatCardModule, MatExpansionModule, BreakerComponent, PanelComponent],
+  imports: [CommonModule, MatCardModule, MatExpansionModule, BreakerComponent],
   templateUrl: './bus-view.component.html',
   styleUrls: ['./bus-view.component.css']
 })
