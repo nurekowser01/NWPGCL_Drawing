@@ -116,7 +116,7 @@ private readonly GITHUB_API = (window as any).GITHUB_API || 'https://api.github.
 
     // console.log('Using tokens:', environment.github.token ? '***' + environment.github.token.slice(-4) : 'No token');
 
-    console.log('Using tokens1:', environment.github.token );
+    console.log('Using tokens1:', this.TOKEN );
 
     return {
       'Authorization': `token ${this.TOKEN}`,

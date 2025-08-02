@@ -11,6 +11,8 @@ export class DrawingService {
  private readonly GITHUB_API = (window as any).GITHUB_API || 'https://api.github.com';
   private readonly REPO = (window as any).GITHUB_REPO || 'nurekowser01/NWPGCL_Drawing';
   private readonly FILE_PATH = 'src/assets/data/drawings.json';
+    private readonly TOKEN = (window as any).GITHUB_TOKEN || '';
+
   private dataVersion = 0;
 
   private cachedData$!: Observable<any>; // Definite assignment assertion
@@ -76,10 +78,10 @@ export class DrawingService {
   }
 
   private getHeaders() {
-    console.log('Using tokens2:', environment.github.token );
+    console.log('Using tokens1:', this.TOKEN );
 
     return {
-      'Authorization': `token ${environment.github.token}`,
+      'Authorization': `token ${this.TOKEN}`,
       'Accept': 'application/vnd.github.v3+json',
       'X-GitHub-Api-Version': '2022-11-28'
     };
