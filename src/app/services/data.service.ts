@@ -114,6 +114,10 @@ export class DataService {
   }
 
   private getHeaders() {
+
+    console.log('Using token:', environment.github.token ? '***' + environment.github.token.slice(-4) : 'No token');
+
+    
     return {
       'Authorization': `token ${this.TOKEN}`,
       'Accept': 'application/vnd.github.v3+json',
