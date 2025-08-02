@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, map, retry, switchMap, delay } from 'rxjs/operators';
 import { Breaker } from '../models/breaker.model';
-import { environment } from '../environments/environment';
+import { environment } from '../../environments/environment';
 import { Bus } from '../models/bus.model';
 
 @Injectable({
