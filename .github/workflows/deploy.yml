@@ -31,10 +31,11 @@ jobs:
           mkdir -p src/app/environments
           # Development environment
           echo "export const environment = { production: false, github: { api: 'https://api.github.com', repo: 'nurekowser01/NWPGCL_Drawing', token: '' } };" > src/app/environments/environment.ts
-          # Production environment with JSON stringified token
-          echo "export const environment = { production: true, github: { api: 'https://api.github.com', repo: 'nurekowser01/NWPGCL_Drawing', token: JSON.parse('$(node -p 'JSON.stringify(process.env.GH_TOKEN || "")')') } };" > src/app/environments/environment.prod.ts
-          # Verify file contents
-          cat src/app/environments/environment.prod.ts
+          # Production environment (simpler injection)
+          echo "export const environment = { production: true, github: { api: 'https://api.github.com', repo: 'nurekowser01/NWPGCL_Drawing', token: '${{ secrets.GH_TOKEN }}' } };" > src/app/environments/environment.prod.ts
+          # Verify token was injected (without exposing full token)
+          echo "Token was injected: $(grep -q 'token:' src/app/environments/environment.prod.ts && echo 'Yes' || echo 'No')"
+          echo "Token length: $(grep -oP 'token: \K[^,]+' src/app/environments/environment.prod.ts | tr -d "'" | wc -c)"
 
       - name: Build Angular app
         run: npm run build -- --configuration production --base-href /NWPGCL_Drawing/
