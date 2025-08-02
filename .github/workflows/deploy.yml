@@ -18,61 +18,50 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Clean workspace (enhanced)
-        run: |
-          # Remove all build artifacts and caches
-          rm -rf node_modules
-          rm -rf dist
-          rm -rf .angular
-          npm cache clean --force
-
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'npm'  # Will auto-clean if needed
 
-      - name: Install dependencies (fresher install)
-        run: |
-          npm ci --no-audit --prefer-offline
+      - name: Install dependencies
+        run: npm ci
 
-      - name: Create environment files
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Create environment files (corrected path)
         run: |
-          mkdir -p src/app/environments
-          # Production environment with secure token injection
-          cat > src/app/environments/environment.prod.ts <<'EOF'
-          export const environment = {
-            production: true,
-            github: {
-              api: 'https://api.github.com',
-              repo: 'nurekowser01/NWPGCL_Drawing',
-              token: '${GH_TOKEN}'
-            }
-          };
-          EOF
-          # Verify without exposing token
-          echo "Token injected: ${GH_TOKEN:0:4}...${GH_TOKEN: -4} (length: ${#GH_TOKEN})"
+          mkdir -p src/environments  # Changed from src/app/environments
+          
+          # Development environment
+          echo "export const environment = { 
+            production: false, 
+            github: { 
+              api: 'https://api.github.com', 
+              repo: 'nurekowser01/NWPGCL_Drawing', 
+              token: '' 
+            } 
+          };" > src/environments/environment.ts
+          
+          # Production environment
+          echo "export const environment = { 
+            production: true, 
+            github: { 
+              api: 'https://api.github.com', 
+              repo: 'nurekowser01/NWPGCL_Drawing', 
+              token: '${{ secrets.GH_TOKEN }}' 
+            } 
+          };" > src/environments/environment.prod.ts
+          
+          # Verify
+          echo "Environment files created at:"
+          ls -la src/environments/
 
-      - name: Build Angular app (fresh build)
-        run: |
-          npm run build -- --configuration production --base-href /NWPGCL_Drawing/
-          # Verify build output
-          ls -la dist/power-plant-drawing-app/browser/
+      - name: Build Angular app
+        run: npm run build -- --configuration production --base-href /NWPGCL_Drawing/
 
       - name: Add .nojekyll file
         run: touch dist/power-plant-drawing-app/browser/.nojekyll
-
-      - name: Clean previous deployment
-        run: |
-          git fetch origin gh-pages || true
-          git push origin --delete gh-pages || echo "No existing gh-pages branch"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/power-plant-drawing-app/browser
-          keep_files: false  # Ensures clean deployment
-          force_orphan: true  # Ensures clean history
