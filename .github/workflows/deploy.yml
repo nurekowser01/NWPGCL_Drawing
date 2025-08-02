@@ -20,9 +20,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Create production environment file
+      - name: Create ALL environment files
         run: |
           mkdir -p src/environments
+          # Development environment (empty token)
+          echo "export const environment = { production: false, github: { api: 'https://api.github.com', repo: 'nurekowser01/NWPGCL_Drawing', token: '' } };" > src/environments/environment.ts
+          # Production environment (injected token)
           echo "export const environment = { production: true, github: { api: 'https://api.github.com', repo: 'nurekowser01/NWPGCL_Drawing', token: '${{ secrets.GH_TOKEN }}' } };" > src/environments/environment.prod.ts
 
       - name: Build Angular app
