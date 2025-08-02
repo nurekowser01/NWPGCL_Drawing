@@ -24,21 +24,41 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Create required files
+        run: |
+          # Create basic polyfills.ts if missing
+          if [ ! -f src/polyfills.ts ]; then
+            echo "// Basic polyfills" > src/polyfills.ts
+          fi
+
       - name: Prepare environment
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          # Create production environment file
-          cp src/environments/environment.prod.template.ts src/environments/environment.prod.ts
-          sed -i "s/##GITHUB_TOKEN##/$GH_TOKEN/g" src/environments/environment.prod.ts
-          echo "Environment file prepared"
+          mkdir -p src/environments
+          # Development environment
+          echo "export const environment = {
+            production: false,
+            github: {
+              api: 'https://api.github.com',
+              repo: 'nurekowser01/NWPGCL_Drawing',
+              token: ''
+            }
+          };" > src/environments/environment.ts
+          
+          # Production environment
+          echo "export const environment = {
+            production: true,
+            github: {
+              api: 'https://api.github.com',
+              repo: 'nurekowser01/NWPGCL_Drawing',
+              token: '$GH_TOKEN'
+            }
+          };" > src/environments/environment.prod.ts
 
       - name: Build Angular app
         run: |
           npm run build -- --configuration production --base-href /NWPGCL_Drawing/ --output-hashing=all
-
-      - name: Cleanup
-        run: rm src/environments/environment.prod.ts
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
