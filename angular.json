@@ -16,6 +16,8 @@
             "outputPath": "dist/power-plant-drawing-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "baseHref": "/NWPGCL_Drawing/",
+            "deployUrl": "/NWPGCL_Drawing/",
             "polyfills": [
               "zone.js"
             ],

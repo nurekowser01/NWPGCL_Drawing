@@ -1,8 +1,11 @@
 <mat-card class="breaker-card">
   <mat-card-header>
     <mat-card-title>
-      {{ breaker.description }}
+      {{ breaker.description }}      
+       <span *ngIf="breaker.drawingNumber">({{ breaker.drawingNumber }})</span>
+
     </mat-card-title>
+    
   </mat-card-header>
 
   <mat-card-actions>

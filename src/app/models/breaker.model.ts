@@ -3,4 +3,6 @@ export interface Breaker {
   description: string;
   manufacturerDrawing: string;
   asBuiltDrawing?: string;
+  drawingNumber?: string; // ✅ add this line
+
 }
