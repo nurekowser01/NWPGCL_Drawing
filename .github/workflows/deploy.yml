@@ -7,10 +7,16 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # This is crucial for pushing to gh-pages
+      pages: write
+      id-token: write
     
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Important for peaceiris/actions-gh-pages
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
