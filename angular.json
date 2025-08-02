@@ -13,6 +13,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "fileReplacements": [
+              {
+                "replace": "src/environments/environment.ts",
+                "with": "src/environments/environment.prod.ts"
+              }
+            ],
             "outputPath": "dist/power-plant-drawing-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
