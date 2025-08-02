@@ -60,7 +60,7 @@ export class DataService {
   }
 
   private getFileWithSha(): Observable<{content: string, sha: string}> {
-    const url = `${this.GITHUB_API}/repos/${this.REPO}/contents/${this.FILE_PATH}?ref=master&t=${Date.now()}`;
+    const url = `${this.GITHUB_API}/repos/${this.REPO}/contents/${this.FILE_PATH}?ref=master-2&t=${Date.now()}`;
     
     return this.http.get<{content: string, sha: string}>(url, {
       headers: this.getHeaders()
