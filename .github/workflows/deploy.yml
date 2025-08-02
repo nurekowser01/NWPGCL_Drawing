@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -22,46 +24,39 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm ci
-
-      - name: Create required files
         run: |
-          # Create basic polyfills.ts if missing
-          if [ ! -f src/polyfills.ts ]; then
-            echo "// Basic polyfills" > src/polyfills.ts
-          fi
+          npm ci
+          npm install -D @types/node
 
-      - name: Prepare environment
+      - name: Configure Angular
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+          # Create environment files without logging token
           mkdir -p src/environments
-          # Development environment
-          echo "export const environment = {
-            production: false,
-            github: {
-              api: 'https://api.github.com',
-              repo: 'nurekowser01/NWPGCL_Drawing',
-              token: ''
-            }
-          };" > src/environments/environment.ts
+          echo "export const environment = { production: false };" > src/environments/environment.ts
+          echo "export const environment = { production: true };" > src/environments/environment.prod.ts
           
-          # Production environment
-          echo "export const environment = {
-            production: true,
-            github: {
-              api: 'https://api.github.com',
-              repo: 'nurekowser01/NWPGCL_Drawing',
-              token: '$GH_TOKEN'
-            }
-          };" > src/environments/environment.prod.ts
+          # Add token to Angular configuration
+          echo "NG_APP_GITHUB_TOKEN=$GH_TOKEN" >> .env
+          echo "ANGULAR_CONFIGURATION=production" >> .env
 
-      - name: Build Angular app
+      - name: Build Angular (Secure)
         run: |
-          npm run build -- --configuration production --base-href /NWPGCL_Drawing/ --output-hashing=all
+          npm run build -- --configuration production \
+            --base-href /NWPGCL_Drawing/ \
+            --output-hashing=all
+
+      - name: Verify Security
+        run: |
+          if grep -r "github_pat_" dist/; then
+            echo "::error::Token leaked in build artifacts!"
+            exit 1
+          fi
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/power-plant-drawing-app/browser
+          keep_files: false

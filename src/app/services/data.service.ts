@@ -12,11 +12,23 @@ import { environment } from '../../environments/environment';
 export class DataService {
   private readonly GITHUB_API = environment.github.api;
   private readonly REPO = environment.github.repo;
-  private readonly TOKEN = environment.github.token;
+private readonly TOKEN = (process.env as any)['NG_APP_GITHUB_TOKEN'] || '';
   private readonly FILE_PATH = 'src/assets/data/drawings.json';
   private dataVersion = 0;
 
   constructor(private http: HttpClient) { }
+
+  private getHeaders() {
+    if (!this.TOKEN) {
+      console.error('GitHub token not configured');
+      throw new Error('API authentication failed');
+    }
+    return {
+      'Authorization': `Bearer ${this.TOKEN}`,
+      'Accept': 'application/vnd.github.v3+json',
+      'X-GitHub-Api-Version': '2022-11-28'
+    };
+  }
 
   updateBreaker(busId: string, panelId: string, breakerId: string, updatedBreaker: Breaker): Observable<Breaker> {
     return this.getFileWithSha().pipe(
@@ -116,17 +128,7 @@ export class DataService {
     return !!this.TOKEN && this.TOKEN !== '##GITHUB_TOKEN##';
   }
 
-  private getHeaders() {
-    if (!this.TOKEN) {
-      console.error('GitHub token not configured');
-      throw new Error('API authentication failed');
-    }
-    return {
-      'Authorization': `Bearer ${this.TOKEN}`,
-      'Accept': 'application/vnd.github.v3+json',
-      'X-GitHub-Api-Version': '2022-11-28'
-    };
-  }
+  
 
   private decodeContent(content: string): string {
     return atob(content.replace(/\s/g, ''));
