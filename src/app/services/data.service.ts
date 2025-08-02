@@ -4,15 +4,16 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, map, retry, switchMap, delay } from 'rxjs/operators';
 import { Breaker } from '../models/breaker.model';
 import { Bus } from '../models/bus.model';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-   private readonly GITHUB_API = 'https://api.github.com';
-  private readonly REPO = 'nurekowser01/NWPGCL_Drawing';
+  private readonly GITHUB_API = environment.github.api;
+  private readonly REPO = environment.github.repo;
+  private readonly TOKEN = environment.github.token;
   private readonly FILE_PATH = 'src/assets/data/drawings.json';
-private readonly TOKEN = (process.env as any)['NG_APP_GITHUB_TOKEN'] || '';
   private dataVersion = 0;
 
   constructor(private http: HttpClient) { }

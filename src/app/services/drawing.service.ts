@@ -2,15 +2,17 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { map, catchError, shareReplay } from 'rxjs/operators';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DrawingService {
-  private readonly GITHUB_API = 'https://api.github.com';
-  private readonly REPO = 'nurekowser01/NWPGCL_Drawing';
+   private readonly GITHUB_API = environment.github.api;
+  private readonly REPO = environment.github.repo;
+  private readonly TOKEN = environment.github.token;
+  
   private readonly FILE_PATH = 'src/assets/data/drawings.json';
-private readonly TOKEN = (process.env as any)['NG_APP_GITHUB_TOKEN'] || '';
   private cachedData$: Observable<any>;
 
   constructor(private http: HttpClient) {

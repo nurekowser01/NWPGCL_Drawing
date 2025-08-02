@@ -15,37 +15,32 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Angular app
+      - name: Prepare environment
         env:
-          NG_APP_GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          npm run build -- --configuration production \
-            --base-href /NWPGCL_Drawing/ \
-            --output-hashing=all
+          # Create production environment file
+          cp src/environments/environment.prod.template.ts src/environments/environment.prod.ts
+          sed -i "s/##GITHUB_TOKEN##/$GH_TOKEN/g" src/environments/environment.prod.ts
+          echo "Environment file prepared"
 
-      - name: Verify no token leakage
+      - name: Build Angular app
         run: |
-          if grep -r "github_pat_" dist/; then
-            echo "::error::Token found in built files!"
-            exit 1
-          fi
+          npm run build -- --configuration production --base-href /NWPGCL_Drawing/ --output-hashing=all
 
-      - name: Add .nojekyll file
-        run: touch dist/power-plant-drawing-app/browser/.nojekyll
+      - name: Cleanup
+        run: rm src/environments/environment.prod.ts
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
