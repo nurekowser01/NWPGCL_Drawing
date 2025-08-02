@@ -26,33 +26,24 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Create environment files (corrected path)
+      - name: Create environment files
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          mkdir -p src/environments  # Changed from src/app/environments
-          
-          # Development environment
-          echo "export const environment = { 
-            production: false, 
-            github: { 
-              api: 'https://api.github.com', 
-              repo: 'nurekowser01/NWPGCL_Drawing', 
-              token: '' 
-            } 
-          };" > src/environments/environment.ts
-          
-          # Production environment
-          echo "export const environment = { 
-            production: true, 
-            github: { 
-              api: 'https://api.github.com', 
-              repo: 'nurekowser01/NWPGCL_Drawing', 
-              token: '${{ secrets.GH_TOKEN }}' 
-            } 
-          };" > src/environments/environment.prod.ts
-          
-          # Verify
-          echo "Environment files created at:"
-          ls -la src/environments/
+          mkdir -p src/environments
+          # Create with proper escaping
+          cat > src/environments/environment.prod.ts <<'EOF'
+          export const environment = {
+            production: true,
+            github: {
+              api: 'https://api.github.com',
+              repo: 'nurekowser01/NWPGCL_Drawing',
+              token: '${GH_TOKEN}'
+            }
+          };
+          EOF
+          # Verify without exposing token
+          echo "TOKEN_ENDING: ${GH_TOKEN: -4}"
 
       - name: Build Angular app
         run: npm run build -- --configuration production --base-href /NWPGCL_Drawing/
