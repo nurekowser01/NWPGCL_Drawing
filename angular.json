@@ -40,13 +40,15 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": {
+                "scripts": true,
+                "styles": true,
+                "fonts": true
+              },
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
               "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -59,26 +61,15 @@
                   "maximumError": "8kB"
                 }
               ],
-              "allowedCommonJsDependencies": [],
               "serviceWorker": false,
-              "ngswConfigPath": "",
-              "environment": {
-                "NG_APP_GITHUB_API": "https://api.github.com",
-                "NG_APP_GITHUB_REPO": "nurekowser01/NWPGCL_Drawing"
-              }
+              "ngswConfigPath": ""
             },
             "development": {
               "optimization": false,
               "outputHashing": "none",
               "sourceMap": true,
               "namedChunks": true,
-              "extractLicenses": false,
-              "vendorChunk": true,
-              "buildOptimizer": false,
-              "environment": {
-                "NG_APP_GITHUB_API": "https://api.github.com",
-                "NG_APP_GITHUB_REPO": "nurekowser01/NWPGCL_Drawing"
-              }
+              "extractLicenses": false
             }
           },
           "defaultConfiguration": "production"
@@ -129,7 +120,6 @@
     }
   },
   "cli": {
-    "analytics": false,
-    "defaultCollection": "@angular-eslint/schematics"
+    "analytics": false
   }
 }
