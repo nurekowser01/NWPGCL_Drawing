@@ -28,7 +28,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 })
 export class AppComponent {
   title = 'Sirajganj CCPP Unit - 1 Electrical Drawing System';
-  sidebarOpen = true;
+  sidebarOpen = false;
 
   toggleSidebar() {
     this.sidebarOpen = !this.sidebarOpen;
