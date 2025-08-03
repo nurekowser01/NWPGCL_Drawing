@@ -7,11 +7,9 @@ import { DataService } from './data.service';
 
 @Injectable()
 export class ProdDataService extends DataService {
-  getData(): Observable<any> {
-    return this.http.get(this.FILE_PATH);
-  }
 
-  updateBreaker(): Observable<Breaker> {
+
+  override updateBreaker(): Observable<Breaker> {
     return throwError(() => new Error('Updates disabled in production'));
   }
 }

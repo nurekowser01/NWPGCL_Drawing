@@ -5,25 +5,26 @@ import { catchError, map, retry, switchMap, delay } from 'rxjs/operators';
 import { Breaker } from '../models/breaker.model';
 import { environment } from '../../environments/environment';
 import { Bus } from '../models/bus.model';
+import { Environment } from '../../environments/environment.model';
+import { DataService } from './data.service';
+const env = environment as Environment;
 
 @Injectable({
   providedIn: 'root'
 })
-export class DevDataService {
-  private readonly GITHUB_API = environment.github.api;
-  private readonly REPO = environment.github.repo;
-  private readonly FILE_PATH = 'src/assets/data/drawings.json';
-  private readonly TOKEN = environment.github.token;
+export class DevDataService extends DataService{
+  private readonly GITHUB_API = env.github?.api || '';
+  private readonly REPO = env.github?.repo || '';
+  private readonly TOKEN = env.github?.token || '';
+
   private readonly BRANCH = 'main-1'; // Centralized branch name
   private dataVersion = 0; // Add version counter
 
-  constructor(private http: HttpClient) { }
-
-  getData(): Observable<any> {
-    return this.http.get(this.FILE_PATH);
-  }
   
-  updateBreaker(busId: string, panelId: string, breakerId: string, updatedBreaker: Breaker): Observable<Breaker> {
+
+  
+  
+  override updateBreaker(busId: string, panelId: string, breakerId: string, updatedBreaker: Breaker): Observable<Breaker> {
     return this.getFileWithSha().pipe(
       switchMap(fileData => {
         if (!fileData) {
