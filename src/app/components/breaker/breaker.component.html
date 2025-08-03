@@ -2,14 +2,12 @@
   <mat-card-header>
     <mat-card-title>
       {{ breaker.description }}      
-       <span *ngIf="breaker.drawingNumber">({{ breaker.drawingNumber }})</span>
-
+      <span *ngIf="breaker.drawingNumber">({{ breaker.drawingNumber }})</span>
     </mat-card-title>
-    
   </mat-card-header>
 
-  <mat-card-actions>
-    <!-- Manufacturer Drawing Button - Shows "M" -->
+  <mat-card-actions class="actions-center">
+    <!-- Manufacturer Drawing Button -->
     <a 
       mat-flat-button 
       color="primary" 
@@ -21,7 +19,7 @@
     </a>
     
     @if (breaker.asBuiltDrawing) {
-      <!-- As Built Drawing Button - Shows "A" -->
+      <!-- As Built Drawing Button -->
       <a 
         mat-flat-button 
         color="accent" 
@@ -33,13 +31,16 @@
       </a>
     }
     
-    <!-- Edit Button - Keep the icon -->
-    <button 
-      mat-flat-button 
-      color="warn" 
-      (click)="editBreaker()"
-      matTooltip="Edit Drawings">
-      <mat-icon>edit</mat-icon>
-    </button>
+    <!-- Edit Button (only shown in development) -->
+    @if (!isProduction) {
+      <button 
+        mat-flat-button 
+        color="warn" 
+        (click)="editBreaker()"
+        matTooltip="Edit Drawings"
+        class="edit-button">
+        <mat-icon>edit</mat-icon>
+      </button>
+    }
   </mat-card-actions>
 </mat-card>
