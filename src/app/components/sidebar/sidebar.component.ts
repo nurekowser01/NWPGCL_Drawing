@@ -16,13 +16,14 @@ export class SidebarComponent {
   // Define the sidebarOpen property
 
   sections = [
+    { id: 'gas-turbine', name: 'Gas Turbine', icon: 'gas_meter' },
+
     { id: 'steam-turbine', name: 'Steam Turbine', icon: 'water_drop' },
-        { id: 'gas-turbine', name: 'Gas Turbine', icon: 'gas_meter' },
 
     // Add more sections as needed
-    { id: 'transformers', name: 'Transformers', icon: 'bolt' },
-    { id: 'switchgear', name: 'Switchgear', icon: 'power' },
-    { id: 'cables', name: 'Cables', icon: 'cable' }
+    // { id: 'transformers', name: 'Transformers', icon: 'bolt' },
+    // { id: 'switchgear', name: 'Switchgear', icon: 'power' },
+    // { id: 'cables', name: 'Cables', icon: 'cable' }
   ];
 
   // Optional: Add toggle function
