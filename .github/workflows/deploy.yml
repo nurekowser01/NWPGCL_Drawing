@@ -24,11 +24,25 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Angular
+      - name: Configure production environment
+        run: |
+          # Ensure production environment is properly set
+          echo "export const environment = { production: true };" > src/environments/environment.prod.ts
+          cat src/environments/environment.prod.ts
+
+      - name: Build Angular (Production)
         run: |
           npm run build -- --configuration production \
             --base-href /NWPGCL_Drawing/ \
             --output-hashing=all
+
+      - name: Verify production build
+        run: |
+          # Check if production flag is properly set in main.js
+          if ! grep -q "production:!0" dist/power-plant-drawing-app/browser/main.*.js; then
+            echo "::error::Production flag not detected in built files!"
+            exit 1
+          fi
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
