@@ -1,8 +1,21 @@
 <div *ngIf="section">
   <h1 class="section-title">{{ section.name }}</h1>
   
+  <!-- Add search bar here -->
+  <mat-form-field appearance="outline" class="search-bar">
+    <mat-label>Search Breakers</mat-label>
+    <input matInput [formControl]="searchControl" placeholder="Search by ID, description or drawing number">
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+
+  @if (searchTerm && filteredBuses.length === 0) {
+    <div class="no-results">
+      No breakers found matching "{{ searchTerm }}"
+    </div>
+  }
+
   <div class="bus-container">
-    <mat-card *ngFor="let bus of section.buses" class="bus-card">
+    <mat-card *ngFor="let bus of filteredBuses" class="bus-card">
       <mat-card-header class="bus-header">
         <mat-card-title>
           {{ bus.id }}
