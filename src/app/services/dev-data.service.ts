@@ -17,7 +17,7 @@ export class DevDataService extends DataService{
   private readonly REPO = env.github?.repo || '';
   private readonly TOKEN = env.github?.token || '';
 
-  private readonly BRANCH = 'main-1'; // Centralized branch name
+  private readonly BRANCH = 'main-2'; // Centralized branch name
   private dataVersion = 0; // Add version counter
 
   
