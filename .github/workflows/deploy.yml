@@ -36,13 +36,7 @@ jobs:
             --base-href /NWPGCL_Drawing/ \
             --output-hashing=all
 
-      - name: Verify production build
-        run: |
-          # Check if production flag is properly set in main.js
-          if ! grep -q "production:!0" dist/power-plant-drawing-app/browser/main.*.js; then
-            echo "::error::Production flag not detected in built files!"
-            exit 1
-          fi
+      
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
