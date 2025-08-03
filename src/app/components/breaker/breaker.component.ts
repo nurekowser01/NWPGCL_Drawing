@@ -7,7 +7,7 @@ import { Breaker } from '../../models/breaker.model';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialog } from '@angular/material/dialog';
 import { EditBreakerDialogComponent } from '../edit-breaker/edit-breaker-dialog.component';
-import { DataService } from '../../services/data.service';
+import { DataService } from '../../services/data.service'; // Now using abstract class
 
 @Component({
   selector: 'app-breaker',
