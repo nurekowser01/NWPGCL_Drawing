@@ -1720,7 +1720,7 @@
         {
           "id": "GT_EDG",
           "name": "GT EDG",
-          "voltage": "N/A",
+          "voltage": "415V",
           "panels": [
             {
               "id": "GT EDG",
