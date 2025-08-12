@@ -1710,8 +1710,8 @@
                 {
                   "id": "Motor Driven FF Pump",
                   "description": "Motor Driven Fire Fighting Pump",
-                  "manufacturerDrawing": "assets/drawings/motor-driven-ff-pump-manufacturer.pdf",
-                  "asBuiltDrawing": "assets/drawings/motor-driven-ff-pump-asbuilt.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EVVUUAaimLtMub5M1TPBaPYBpypaFXOc7_5NStvqK3u90w?e=96X1HC",
+                  "asBuiltDrawing": ""
                 }
               ]
             }
