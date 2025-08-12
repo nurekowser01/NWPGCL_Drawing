@@ -1728,8 +1728,8 @@
                 {
                   "id": "GT EDG",
                   "description": "GT Emergency Diesel Generator",
-                  "manufacturerDrawing": "assets/drawings/gt-edg-manufacturer.pdf",
-                  "asBuiltDrawing": "assets/drawings/gt-edg-asbuilt.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/ERd3205o3iRIhCN6HCpEjN8BWh7df2Uw9mJpiY-NZV9hpw?e=CnrS51",
+                  "asBuiltDrawing": ""
                 }
               ]
             }
