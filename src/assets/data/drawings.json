@@ -77,15 +77,6 @@
             }
           ]
         },
-
-
-
-
-
-
-
-
-
         {
           "id": "11BBB",
           "name": "6.6kV Bus B",
@@ -170,14 +161,6 @@
             }
           ]
         },
-
-
-
-
-
-
-
-
         {
           "id": "11BFA",
           "name": "BFA Bus",
@@ -314,17 +297,6 @@
             }
           ]
         },
-
-
-
-
-
-
-
-
-
-
-
         {
           "id": "11BFB",
           "name": "BFB Bus",
@@ -532,15 +504,6 @@
             }
           ]
         },
-
-
-
-
-
-
-
-
-
         {
           "id": "11BJA",
           "name": "BJA Bus",
@@ -881,17 +844,6 @@
             }
           ]
         },
-
-
-
-
-
-
-
-
-
-
-
         {
           "id": "11BJB",
           "name": "BJB Bus",
@@ -1135,20 +1087,6 @@
             }
           ]
         },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         {
           "id": "11BJC",
           "name": "BJC Bus",
@@ -1481,21 +1419,6 @@
             }
           ]
         },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         {
           "id": "11BMA",
           "name": "BMA Bus",
@@ -1736,15 +1659,6 @@
             }
           ]
         },
-
-
-
-
-
-
-
-
-
         {
           "id": "GBC",
           "name": "GBC PLC",
@@ -1756,114 +1670,89 @@
                 {
                   "id": "GBC PLC",
                   "description": "GBC PLC Room",
-                  "manufacturerDrawing": "assets/drawings/st-11BBA01-manufacturer.pdf",
-                  "asBuiltDrawing": "assets/drawings/st-11BBA01-asbuilt.pdf"
+                  "manufacturerDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/EWoL1xhAVu1Fm3NN9KPWgp4B6N7D8xiNKhIrmBPedkveMw?e=6XXNat",
+                  "asBuiltDrawing": "https://nwpgclbd-my.sharepoint.com/:b:/g/personal/nurekowser_nwpgcl_gov_bd/Ea269b2kF0NPlGYCdBxpPvwBSzSjO5phtW1IgY5Nyl1hUw?e=FFHgDO"
                 }
               ]
             }
           ]
         },
-
-
-
-
-
-
-
-
-
-
         {
-        "id": "PUMP_HOUSE",
-        "name": "Pump House",
-        "voltage": "N/A",
-        "panels": [
-          {
-            "id": "DIESEL_FF",
-            "breakers": [
-              {
-                "id": "Diesel Driven FF Pump",
-                "description": "Diesel Driven Fire Fighting Pump",
-                "manufacturerDrawing": "assets/drawings/diesel-driven-ff-pump-manufacturer.pdf",
-                "asBuiltDrawing": "assets/drawings/diesel-driven-ff-pump-asbuilt.pdf"
-              }
-            ]
-          },
-          {
-            "id": "JOCKEY_PUMP",
-            "breakers": [
-              {
-                "id": "Jockey Pump",
-                "description": "Jockey Pump Panel",
-                "manufacturerDrawing": "assets/drawings/jockey-pump-panel-manufacturer.pdf",
-                "asBuiltDrawing": "assets/drawings/jockey-pump-panel-asbuilt.pdf"
-              }
-            ]
-          },
-          {
-            "id": "MOTOR_FF",
-            "breakers": [
-              {
-                "id": "Motor Driven FF Pump",
-                "description": "Motor Driven Fire Fighting Pump",
-                "manufacturerDrawing": "assets/drawings/motor-driven-ff-pump-manufacturer.pdf",
-                "asBuiltDrawing": "assets/drawings/motor-driven-ff-pump-asbuilt.pdf"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "GT_EDG",
-        "name": "GT EDG",
-        "voltage": "N/A",
-        "panels": [
-          {
-            "id": "GT EDG",
-            "breakers": [
-              {
-                "id": "GT EDG",
-                "description": "GT Emergency Diesel Generator",
-                "manufacturerDrawing": "assets/drawings/gt-edg-manufacturer.pdf",
-                "asBuiltDrawing": "assets/drawings/gt-edg-asbuilt.pdf"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "PDB_AUX",
-        "name": "PDB Auxiliary",
-        "voltage": "N/A",
-        "panels": [
-          {
-            "id": "PDB Auxiliary",
-            "breakers": [
-              {
-                "id": "PDB Auxiliary",
-                "description": "PDB Auxiliary ATS",
-                "manufacturerDrawing": "assets/drawings/pdb-auxiliary-manufacturer.pdf",
-                "asBuiltDrawing": "assets/drawings/pdb-auxiliary-asbuilt.pdf"
-              }
-            ]
-          }
-        ]
-      }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          "id": "PUMP_HOUSE",
+          "name": "Pump House",
+          "voltage": "N/A",
+          "panels": [
+            {
+              "id": "DIESEL_FF",
+              "breakers": [
+                {
+                  "id": "Diesel Driven FF Pump",
+                  "description": "Diesel Driven Fire Fighting Pump",
+                  "manufacturerDrawing": "assets/drawings/diesel-driven-ff-pump-manufacturer.pdf",
+                  "asBuiltDrawing": "assets/drawings/diesel-driven-ff-pump-asbuilt.pdf"
+                }
+              ]
+            },
+            {
+              "id": "JOCKEY_PUMP",
+              "breakers": [
+                {
+                  "id": "Jockey Pump",
+                  "description": "Jockey Pump Panel",
+                  "manufacturerDrawing": "assets/drawings/jockey-pump-panel-manufacturer.pdf",
+                  "asBuiltDrawing": "assets/drawings/jockey-pump-panel-asbuilt.pdf"
+                }
+              ]
+            },
+            {
+              "id": "MOTOR_FF",
+              "breakers": [
+                {
+                  "id": "Motor Driven FF Pump",
+                  "description": "Motor Driven Fire Fighting Pump",
+                  "manufacturerDrawing": "assets/drawings/motor-driven-ff-pump-manufacturer.pdf",
+                  "asBuiltDrawing": "assets/drawings/motor-driven-ff-pump-asbuilt.pdf"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "GT_EDG",
+          "name": "GT EDG",
+          "voltage": "N/A",
+          "panels": [
+            {
+              "id": "GT EDG",
+              "breakers": [
+                {
+                  "id": "GT EDG",
+                  "description": "GT Emergency Diesel Generator",
+                  "manufacturerDrawing": "assets/drawings/gt-edg-manufacturer.pdf",
+                  "asBuiltDrawing": "assets/drawings/gt-edg-asbuilt.pdf"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "PDB_AUX",
+          "name": "PDB Auxiliary",
+          "voltage": "N/A",
+          "panels": [
+            {
+              "id": "PDB Auxiliary",
+              "breakers": [
+                {
+                  "id": "PDB Auxiliary",
+                  "description": "PDB Auxiliary ATS",
+                  "manufacturerDrawing": "assets/drawings/pdb-auxiliary-manufacturer.pdf",
+                  "asBuiltDrawing": "assets/drawings/pdb-auxiliary-asbuilt.pdf"
+                }
+              ]
+            }
+          ]
+        }
       ]
     },
     {
